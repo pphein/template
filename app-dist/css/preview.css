@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Euclid Circular A';
     src: url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Regular-WebS.eot");
-    src: local("Euclid Circular A"),local("Euclid Circular A Regular"),url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Regular.eot?#iefix") format("embedded-opentype"),url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Regular-WebS.woff2") format("woff2"),url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Regular-WebS.woff") format("woff"),url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Regular.ttf") format("truetype");
+    src: local("Euclid Circular A"), local("Euclid Circular A Regular"), url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Regular.eot?#iefix") format("embedded-opentype"), url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Regular-WebS.woff2") format("woff2"), url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Regular-WebS.woff") format("woff"), url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap
@@ -10,7 +10,7 @@
 @font-face {
     font-family: 'Euclid Circular A';
     src: url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Medium-WebS.eot");
-    src: local("Euclid Circular A Medium"),url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Medium.eot?#iefix") format("embedded-opentype"),url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Medium-WebS.woff2") format("woff2"),url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Medium-WebS.woff") format("woff"),url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Medium.ttf") format("truetype");
+    src: local("Euclid Circular A Medium"), url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Medium.eot?#iefix") format("embedded-opentype"), url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Medium-WebS.woff2") format("woff2"), url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Medium-WebS.woff") format("woff"), url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Medium.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
     font-display: swap
@@ -19,14 +19,14 @@
 @font-face {
     font-family: 'Euclid Circular A';
     src: url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Semibold-WebS.eot");
-    src: local("Euclid Circular A SemiBold"),url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Semibold.eot?#iefix") format("embedded-opentype"),url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Semibold-WebS.woff2") format("woff2"),url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Semibold-WebS.woff") format("woff"),url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Semibold.ttf") format("truetype");
+    src: local("Euclid Circular A SemiBold"), url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Semibold.eot?#iefix") format("embedded-opentype"), url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Semibold-WebS.woff2") format("woff2"), url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Semibold-WebS.woff") format("woff"), url("../../app-dist/fonts/EuclidCircularA/EuclidCircularA-Semibold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: swap
 }
 
 .sf-styles {
-    font-family: "Euclid Circular A",Helvetica,Arial,sans-serif;
+    font-family: "Euclid Circular A", Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25;
@@ -58,7 +58,8 @@ body.sf-editor-on #sf-page-blocks .sf-block-holder:not(.sf-on-edit) {
     opacity: 0.5
 }
 
-body.sf-editor-on #sf-page-blocks .sf-block-holder:not(.sf-on-edit):hover .sf-block-controls,body.sf-editor-on #sf-page-blocks .sf-block-holder:not(.sf-on-edit):hover .sf-block-name {
+body.sf-editor-on #sf-page-blocks .sf-block-holder:not(.sf-on-edit):hover .sf-block-controls,
+body.sf-editor-on #sf-page-blocks .sf-block-holder:not(.sf-on-edit):hover .sf-block-name {
     opacity: 0;
     visibility: hidden
 }
@@ -96,15 +97,17 @@ body.sf-no-content.sf-ondrag #js-no-blocks {
 }
 
 body.sf-no-content.sf-ondrag #js-drop-here {
-    -webkit-transform: scale(1) translate(-50%,-50%);
-    -ms-transform: scale(1) translate(-50%,-50%);
-    transform: scale(1) translate(-50%,-50%);
+    -webkit-transform: scale(1) translate(-50%, -50%);
+    -ms-transform: scale(1) translate(-50%, -50%);
+    transform: scale(1) translate(-50%, -50%);
     opacity: 1;
     visibility: visible
 }
 
-body.inEditor .fixed-bottom,body.inEditor .fixed-top,body.inEditor .position-fixed {
-    position: absolute!important
+body.inEditor .fixed-bottom,
+body.inEditor .fixed-top,
+body.inEditor .position-fixed {
+    position: absolute !important
 }
 
 body.inEditor #sf-page-blocks .sf-block-holder:not(.sf-on-edit):hover .sf-block [sf-type=section] {
@@ -118,11 +121,13 @@ body.inEditor .sf-block-holder .sf-block [sf-type=section] {
 
 @media (max-width: 1279.98px) {
     body.inEditor[sf-scale="0.25"] .sf-block-name {
-        display:none
+        display: none
     }
 }
 
-body.inEditor[sf-scale="0.25"] .sf-block-controls,body.inEditor[sf-scale="0.25"] .sf-block-name,body.inEditor[sf-scale="0.25"] .sf-possible-target-label {
+body.inEditor[sf-scale="0.25"] .sf-block-controls,
+body.inEditor[sf-scale="0.25"] .sf-block-name,
+body.inEditor[sf-scale="0.25"] .sf-possible-target-label {
     -webkit-transform: scale(4);
     -ms-transform: scale(4);
     transform: scale(4)
@@ -145,18 +150,20 @@ body.inEditor[sf-scale="0.25"] .sf-possible-target .sf-drop-option:before {
 }
 
 body.inEditor[sf-scale="0.25"] .sf-possible-target .sf-drop-option[data-option=inside]:before {
-    -webkit-transform: scale(4) translate(-50%,-50%);
-    -ms-transform: scale(4) translate(-50%,-50%);
-    transform: scale(4) translate(-50%,-50%)
+    -webkit-transform: scale(4) translate(-50%, -50%);
+    -ms-transform: scale(4) translate(-50%, -50%);
+    transform: scale(4) translate(-50%, -50%)
 }
 
 @media (max-width: 649.98px) {
     body.inEditor[sf-scale="0.5"] .sf-block-name {
-        display:none
+        display: none
     }
 }
 
-body.inEditor[sf-scale="0.5"] .sf-block-controls,body.inEditor[sf-scale="0.5"] .sf-block-name,body.inEditor[sf-scale="0.5"] .sf-possible-target-label {
+body.inEditor[sf-scale="0.5"] .sf-block-controls,
+body.inEditor[sf-scale="0.5"] .sf-block-name,
+body.inEditor[sf-scale="0.5"] .sf-possible-target-label {
     -webkit-transform: scale(2);
     -ms-transform: scale(2);
     transform: scale(2)
@@ -178,18 +185,20 @@ body.inEditor[sf-scale="0.5"] .sf-possible-target .sf-drop-option:before {
 }
 
 body.inEditor[sf-scale="0.5"] .sf-possible-target .sf-drop-option[data-option=inside]:before {
-    -webkit-transform: scale(2) translate(-50%,-50%);
-    -ms-transform: scale(2) translate(-50%,-50%);
-    transform: scale(2) translate(-50%,-50%)
+    -webkit-transform: scale(2) translate(-50%, -50%);
+    -ms-transform: scale(2) translate(-50%, -50%);
+    transform: scale(2) translate(-50%, -50%)
 }
 
 @media (max-width: 459.98px) {
     body.inEditor[sf-scale="0.75"] .sf-block-name {
-        display:none
+        display: none
     }
 }
 
-body.inEditor[sf-scale="0.75"] .sf-block-controls,body.inEditor[sf-scale="0.75"] .sf-block-name,body.inEditor[sf-scale="0.75"] .sf-possible-target-label {
+body.inEditor[sf-scale="0.75"] .sf-block-controls,
+body.inEditor[sf-scale="0.75"] .sf-block-name,
+body.inEditor[sf-scale="0.75"] .sf-possible-target-label {
     -webkit-transform: scale(1.33333);
     -ms-transform: scale(1.33333);
     transform: scale(1.33333)
@@ -211,39 +220,45 @@ body.inEditor[sf-scale="0.75"] .sf-possible-target .sf-drop-option:before {
 }
 
 body.inEditor[sf-scale="0.75"] .sf-possible-target .sf-drop-option[data-option=inside]:before {
-    -webkit-transform: scale(1.33333) translate(-50%,-50%);
-    -ms-transform: scale(1.33333) translate(-50%,-50%);
-    transform: scale(1.33333) translate(-50%,-50%)
+    -webkit-transform: scale(1.33333) translate(-50%, -50%);
+    -ms-transform: scale(1.33333) translate(-50%, -50%);
+    transform: scale(1.33333) translate(-50%, -50%)
 }
 
 @media (max-width: 359.98px) {
     body.inEditor[sf-scale="1"] .sf-block-name {
-        display:none
+        display: none
     }
 }
 
 body.sf-ondrag #sf-page-blocks .sf-block-holder .sf-block [sf-type=section] {
-    -webkit-box-shadow: none!important;
-    box-shadow: none!important
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important
 }
 
-body.sf-ondrag .sf-block-controls,body.sf-ondrag .sf-block-name {
-    display: none!important
+body.sf-ondrag .sf-block-controls,
+body.sf-ondrag .sf-block-name {
+    display: none !important
 }
 
 body.sf-ondrag #sf-page-blocks {
     min-height: 100vh
 }
 
-body.sf-ondrag .sf-on-edit.col,body.sf-ondrag .sf-on-edit.row,body.sf-ondrag .sf-on-edit[class^=col-],body.sf-ondrag .sf-on-edit[sf-type=container],body.sf-ondrag .sf-on-edit[sf-type=form],body.sf-ondrag .sf-on-edit[sf-type=link-container] {
-    min-height: 23px!important
+body.sf-ondrag .sf-on-edit.col,
+body.sf-ondrag .sf-on-edit.row,
+body.sf-ondrag .sf-on-edit[class^=col-],
+body.sf-ondrag .sf-on-edit[sf-type=container],
+body.sf-ondrag .sf-on-edit[sf-type=form],
+body.sf-ondrag .sf-on-edit[sf-type=link-container] {
+    min-height: 23px !important
 }
 
 body.sf-ondrag #sf-page-blocks .sf-block-holder .sf-block .js-on-edit {
-    outline-style: dashed!important;
-    cursor: -webkit-grabbing!important;
-    cursor: grabbing!important;
-    opacity: 0.4!important
+    outline-style: dashed !important;
+    cursor: -webkit-grabbing !important;
+    cursor: grabbing !important;
+    opacity: 0.4 !important
 }
 
 body[sf-dragging-el=section] .sf-possible-target {
@@ -255,28 +270,28 @@ body[sf-dragging-el=section] .sf-possible-target.sf-active {
 }
 
 body[sf-dragging-el=section] .sf-possible-target .sf-drop-option {
-    background: none!important;
-    border-color: transparent!important
+    background: none !important;
+    border-color: transparent !important
 }
 
 body[sf-dragging-el=section] .sf-possible-target .sf-drop-option:before {
-    display: none!important
+    display: none !important
 }
 
 body[sf-dragging-el=section] .sf-possible-target .sf-drop-option.sf-active {
-    border-color: #2260FF!important
+    border-color: #2260FF !important
 }
 
 body[sf-dragging-el=section] .sf-possible-target .sf-possible-target-label {
-    display: none!important;
+    display: none !important;
     visibility: hidden
 }
 
 .sf-possible-target {
-    border: 1px solid rgba(34,96,255,0.15);
+    border: 1px solid rgba(34, 96, 255, 0.15);
     position: absolute;
     text-align: center;
-    visibility: visible!important;
+    visibility: visible !important;
     z-index: 123456789
 }
 
@@ -284,11 +299,13 @@ body[sf-dragging-el=section] .sf-possible-target .sf-possible-target-label {
     border: 1px dashed #2260FF
 }
 
-.sf-possible-target.sf-active .sf-drop-option,.sf-possible-target.sf-active .sf-possible-target-label {
+.sf-possible-target.sf-active .sf-drop-option,
+.sf-possible-target.sf-active .sf-possible-target-label {
     display: inline-block
 }
 
-.sf-possible-target .sf-drop-option,.sf-possible-target .sf-possible-target-label {
+.sf-possible-target .sf-drop-option,
+.sf-possible-target .sf-possible-target-label {
     display: none;
     position: absolute;
     color: #fff;
@@ -335,7 +352,7 @@ body[sf-dragging-el=section] .sf-possible-target .sf-possible-target-label {
 }
 
 .sf-possible-target .sf-drop-option.sf-active {
-    border-color: #2260FF!important
+    border-color: #2260FF !important
 }
 
 .sf-possible-target .sf-drop-option.sf-active:before {
@@ -383,9 +400,9 @@ body[sf-dragging-el=section] .sf-possible-target .sf-possible-target-label {
     content: "Inside";
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     -webkit-transform-origin: 50% 50%;
     -ms-transform-origin: 50% 50%;
     transform-origin: 50% 50%
@@ -429,7 +446,7 @@ body[sf-dragging-el=section] .sf-possible-target .sf-possible-target-label {
 }
 
 .sf-possible-target.sf-inside:not(.sf-before):not(.sf-after) .sf-drop-option {
-    top: 0!important;
+    top: 0 !important;
     height: 100%
 }
 
@@ -501,8 +518,7 @@ body[sf-dragging-el=section] .sf-possible-target .sf-possible-target-label {
     right: unset
 }
 
-#sf-page-blocks.empty {
-}
+#sf-page-blocks.empty {}
 
 #sf-page-blocks .sf-block-placeholder {
     width: 100%;
@@ -545,16 +561,18 @@ body[sf-dragging-el=section] .sf-possible-target .sf-possible-target-label {
     transition: opacity 0.15s
 }
 
-#sf-page-blocks .sf-block-holder:not(.sf-on-edit):hover .sf-block-controls,#sf-page-blocks .sf-block-holder:not(.sf-on-edit):hover .sf-block-name {
+#sf-page-blocks .sf-block-holder:not(.sf-on-edit):hover .sf-block-controls,
+#sf-page-blocks .sf-block-holder:not(.sf-on-edit):hover .sf-block-name {
     opacity: 1;
     visibility: visible
 }
 
 #sf-page-blocks .sf-block-holder.sf-on-edit {
-    height: auto!important
+    height: auto !important
 }
 
-#sf-page-blocks .sf-block-holder:first-of-type .sf-block-up,#sf-page-blocks .sf-block-holder:last-of-type .sf-block-down {
+#sf-page-blocks .sf-block-holder:first-of-type .sf-block-up,
+#sf-page-blocks .sf-block-holder:last-of-type .sf-block-down {
     display: none
 }
 
@@ -583,32 +601,36 @@ body[sf-dragging-el=section] .sf-possible-target .sf-possible-target-label {
 }
 
 #sf-page-blocks .sf-block-holder.sf-block-placeholder {
-    background: -webkit-gradient(linear,left bottom,left top,from(rgba(206,203,219,0.4)),to(rgba(206,203,219,0.4)));
-    background: -o-linear-gradient(bottom,rgba(206,203,219,0.4),rgba(206,203,219,0.4));
-    background: linear-gradient(0deg,rgba(206,203,219,0.4),rgba(206,203,219,0.4));
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(206, 203, 219, 0.4)), to(rgba(206, 203, 219, 0.4)));
+    background: -o-linear-gradient(bottom, rgba(206, 203, 219, 0.4), rgba(206, 203, 219, 0.4));
+    background: linear-gradient(0deg, rgba(206, 203, 219, 0.4), rgba(206, 203, 219, 0.4));
     height: 100px;
-    -webkit-transition: all 0.5s cubic-bezier(0.39,1.31,0.28,1);
-    -o-transition: all 0.5s cubic-bezier(0.39,1.31,0.28,1);
-    transition: all 0.5s cubic-bezier(0.39,1.31,0.28,1)
+    -webkit-transition: all 0.5s cubic-bezier(0.39, 1.31, 0.28, 1);
+    -o-transition: all 0.5s cubic-bezier(0.39, 1.31, 0.28, 1);
+    transition: all 0.5s cubic-bezier(0.39, 1.31, 0.28, 1)
 }
 
 #sf-page-blocks .sf-block-holder.ui-sortable-helper {
-    list-style: none!important;
-    border-radius: 0!important;
-    -webkit-box-shadow: none!important;
-    box-shadow: none!important;
+    list-style: none !important;
+    border-radius: 0 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
     -webkit-transform: scale(0.3);
     -ms-transform: scale(0.3);
     transform: scale(0.3);
     -webkit-transform-origin: 0 0;
     -ms-transform-origin: 0 0;
     transform-origin: 0 0;
-    -webkit-transition: width 0.1s,height 0.1s;
-    -o-transition: width 0.1s,height 0.1s;
-    transition: width 0.1s,height 0.1s
+    -webkit-transition: width 0.1s, height 0.1s;
+    -o-transition: width 0.1s, height 0.1s;
+    transition: width 0.1s, height 0.1s
 }
 
-#sf-page-blocks .sf-block-holder.ui-sortable-helper .sf-block-clone,#sf-page-blocks .sf-block-holder.ui-sortable-helper .sf-block-delete,#sf-page-blocks .sf-block-holder.ui-sortable-helper .sf-block-edit,#sf-page-blocks .sf-block-holder.ui-sortable-helper .sf-block-move,#sf-page-blocks .sf-block-holder.ui-sortable-helper .sf-block-name {
+#sf-page-blocks .sf-block-holder.ui-sortable-helper .sf-block-clone,
+#sf-page-blocks .sf-block-holder.ui-sortable-helper .sf-block-delete,
+#sf-page-blocks .sf-block-holder.ui-sortable-helper .sf-block-edit,
+#sf-page-blocks .sf-block-holder.ui-sortable-helper .sf-block-move,
+#sf-page-blocks .sf-block-holder.ui-sortable-helper .sf-block-name {
     opacity: 0
 }
 
@@ -619,13 +641,13 @@ body[sf-dragging-el=section] .sf-possible-target .sf-possible-target-label {
 }
 
 #sf-page-blocks .sf-block-holder .sf-block [data-sf-uid]:not(.js-on-edit):not([data-sf-type=section]):not([data-sf-type=container]):not([data-sf-type=form]):hover {
-    outline: 2px solid rgba(34,96,255,0.5)!important;
-    cursor: alias!important
+    outline: 2px solid rgba(34, 96, 255, 0.5) !important;
+    cursor: alias !important
 }
 
 #sf-page-blocks .sf-block-holder .sf-block .js-element-highlighted:not(.js-on-edit) {
-    outline: 2px solid rgba(34,96,255,0.5)!important;
-    cursor: alias!important
+    outline: 2px solid rgba(34, 96, 255, 0.5) !important;
+    cursor: alias !important
 }
 
 #sf-page-blocks .sf-block-holder .sf-block .js-element-highlighted:not(.js-on-edit)[data-sf-type=section] {
@@ -633,9 +655,9 @@ body[sf-dragging-el=section] .sf-possible-target .sf-possible-target-label {
 }
 
 #sf-page-blocks .sf-block-holder .sf-block .js-on-edit {
-    outline: 2px solid #2260FF!important;
-    cursor: -webkit-grab!important;
-    cursor: grab!important
+    outline: 2px solid #2260FF !important;
+    cursor: -webkit-grab !important;
+    cursor: grab !important
 }
 
 #sf-page-blocks .sf-block-holder .sf-block .js-on-edit[data-sf-type=section] {
@@ -645,9 +667,9 @@ body[sf-dragging-el=section] .sf-possible-target .sf-possible-target-label {
 #sf-page-blocks .sf-block-holder>img {
     display: block;
     width: 100%;
-    -webkit-transition: height 0.25s,opacity 0.25s;
-    -o-transition: height 0.25s,opacity 0.25s;
-    transition: height 0.25s,opacity 0.25s;
+    -webkit-transition: height 0.25s, opacity 0.25s;
+    -o-transition: height 0.25s, opacity 0.25s;
+    transition: height 0.25s, opacity 0.25s;
     cursor: move
 }
 
@@ -753,7 +775,7 @@ body[sf-dragging-el=section] .sf-possible-target .sf-possible-target-label {
 .sf-block-controls a:hover {
     border-color: #0043ee;
     background: #2260FF;
-    opacity: 1!important
+    opacity: 1 !important
 }
 
 .sf-block-controls a:hover svg {
@@ -781,8 +803,10 @@ body[sf-dragging-el=section] .sf-possible-target .sf-possible-target-label {
 }
 
 @media (max-width: 991.98px) {
-    .sf-editor-mobile .sf-block-holder:not(.sf-on-edit) .sf-block-controls,.sf-editor-mobile .sf-block-holder:not(.sf-on-edit) .sf-block-name {
-        opacity:1;
+
+    .sf-editor-mobile .sf-block-holder:not(.sf-on-edit) .sf-block-controls,
+    .sf-editor-mobile .sf-block-holder:not(.sf-on-edit) .sf-block-name {
+        opacity: 1;
         visibility: visible
     }
 }
@@ -838,20 +862,24 @@ body[sf-dragging-el=section] .sf-possible-target .sf-possible-target-label {
     right: 180px
 }
 
-.sf-centered .sf-block-controls,.sf-centered .sf-block-name {
-    top: 50%!important;
+.sf-centered .sf-block-controls,
+.sf-centered .sf-block-name {
+    top: 50% !important;
     margin-top: -15px
 }
 
-[sf-scale="0.75"] .sf-centered .sf-block-controls,[sf-scale="0.75"] .sf-centered .sf-block-name {
+[sf-scale="0.75"] .sf-centered .sf-block-controls,
+[sf-scale="0.75"] .sf-centered .sf-block-name {
     margin-top: -20px
 }
 
-[sf-scale="0.5"] .sf-centered .sf-block-controls,[sf-scale="0.5"] .sf-centered .sf-block-name {
+[sf-scale="0.5"] .sf-centered .sf-block-controls,
+[sf-scale="0.5"] .sf-centered .sf-block-name {
     margin-top: -30px
 }
 
-[sf-scale="0.25"] .sf-centered .sf-block-controls,[sf-scale="0.25"] .sf-centered .sf-block-name {
+[sf-scale="0.25"] .sf-centered .sf-block-controls,
+[sf-scale="0.25"] .sf-centered .sf-block-name {
     margin-top: -60px
 }
 
@@ -880,7 +908,7 @@ body[sf-dragging-el=section] .sf-possible-target .sf-possible-target-label {
 }
 
 #js-no-blocks .sf-no-content-title {
-    color: #0C111E!important
+    color: #0C111E !important
 }
 
 #js-drop-here {
@@ -901,9 +929,9 @@ body[sf-dragging-el=section] .sf-possible-target .sf-possible-target-label {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: scale(0) translate(-50%,-50%);
-    -ms-transform: scale(0) translate(-50%,-50%);
-    transform: scale(0) translate(-50%,-50%);
+    -webkit-transform: scale(0) translate(-50%, -50%);
+    -ms-transform: scale(0) translate(-50%, -50%);
+    transform: scale(0) translate(-50%, -50%);
     border: 1px dashed #808080;
     border-radius: 10px;
     -webkit-transition: all 0.1s ease-in-out;

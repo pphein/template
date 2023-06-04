@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Startup preview - Main page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="custom" content="MjExMjc0" id="snextras">
+    <link rel="icon" href="i/favicon-default.png">
+    <!-- AOS 3.0.0-beta.6 plugin CSS (Animations) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@100;200;300;400;500;600;700;800;900&family=Marhey:wght@100;200;300;400;500;600;700;800;900&subset=latin&display=swap"
+        rel="stylesheet" id="sf-google-fonts">
+    <!-- Startup CSS + Bootstrap CSS (Styles for all blocks) - Remove ".min" if you want to edit a css code -->
+    <!-- <link
+        href="https://designmodo.com/startup/app/pub/211274/7f11ca0d526f3dfe8df9f7ac75a9c4eb/styles/css/styles.min.css?v=1685886020"
+        rel="stylesheet" id="sf-custom-css" /> -->
+    <!-- jQuery 3.6.0 (uncomment line below if you need jQuery) -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <!-- Styles for controls (delete, move, edit, block name) -->
+    <link href="app-dist/css/preview.css" rel="stylesheet" />
+    <link rel="stylesheet" href="app-dist/css/ecommerce.min.css">
+    <!-- Open graph settings (social networks sharing settings) -->
+    <meta name='twitter:card' content='summary_large_image'>
+    <!-- Open graph settings end -->
+</head>
+
+<body>
+    <!-- Contact 1 -->
+    <section class="py-10 py-lg-20 bg-bg-3 text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-9">
+                    <h1 class="mb-6" data-aos="fade-down" data-aos-delay="0">
+                        Let’s talk
+                    </h1>
+                    <form action="form-handler.php" method="post" enctype="multipart/form-data"
+                        class="mb-15 js-ajax-form" data-aos="fade-down" data-aos-delay="150">
+                        <!-- forms alerts -->
+                        <div class="alert alert-action-8 fixed-top invisible fade js-form-result" data-result="success"
+                            role="alert">
+                            <span class="js-form-alert-text" data-default-text="Thanks for your message!">
+                                Thanks for your message!
+                            </span>
+                        </div>
+                        <div class="alert alert-action-5 fixed-top invisible fade js-form-result" data-result="error"
+                            role="alert">
+                            <span class="js-form-alert-text">
+                                Error!
+                            </span>
+                        </div>
+                        <!-- forms alerts end -->
+                        <input type="email" name="email" placeholder="Email"
+                            class="mb-6 form-control border border-dark-3" required="required">
+                        <textarea name="message" placeholder="Your message"
+                            class="mb-6 form-control border border-dark-3" rows="5" required="required"></textarea>
+                        <div class="mb-6 row justify-content-center">
+                            <div class="col-sm-6 mb-6 mb-sm-0">
+                                <input type="text" name="name" placeholder="Name"
+                                    class="form-control border border-dark-3" required="required">
+                            </div>
+                            <div class="col-sm-6">
+                                <button class="btn btn-action-1 w-100">
+                                    Send message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="w-50 border-bottom border-dark-3 mx-auto mb-10" data-aos="fade-down"
+                        data-aos-delay="250">
+                    </div>
+                    <p class="mb-2" data-aos="fade-down" data-aos-delay="400">
+                        or call us via whatsapp
+                    </p>
+                    <a href="tel:+15555055050" class="text-dark-1 fw-bold fs-1" data-aos="fade-down"
+                        data-aos-delay="500">
+                        +1 555 505 5050
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact 2 -->
+    <section class="py-10 py-lg-20 bg-bg-3 text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 col-sm-10 mb-15 mb-lg-20">
+                    <p class="fs-1 mb-5" data-aos="fade-down" data-aos-delay="0">
+                        Contact us
+                    </p>
+                    <h2 class="display-5 mb-15 remove-br-sm" data-aos="fade-down" data-aos-delay="150">
+                        The website builder
+                        <br>to help you grow
+                    </h2>
+                    <form action="form-handler.php" method="post" enctype="multipart/form-data" class="js-ajax-form"
+                        data-aos="fade-down" data-aos-delay="250">
+                        <!-- forms alerts -->
+                        <div class="alert alert-action-8 fixed-top invisible fade js-form-result" data-result="success"
+                            role="alert">
+                            <span class="js-form-alert-text" data-default-text="Thanks for your message!">
+                                Thanks for your message!
+                            </span>
+                        </div>
+                        <div class="alert alert-action-5 fixed-top invisible fade js-form-result" data-result="error"
+                            role="alert">
+                            <span class="js-form-alert-text">
+                                Error!
+                            </span>
+                        </div>
+                        <!-- forms alerts end -->
+                        <textarea name="message" placeholder="Your message"
+                            class="mb-6 form-control border border-dark-3" rows="5" required="required"></textarea>
+                        <div class="row justify-content-center">
+                            <div class="mb-sm-0 mb-6 col-xl-8 col-md-7 col-sm-6">
+                                <input type="email" name="email" placeholder="Email"
+                                    class="form-control border border-dark-3" required="required">
+                            </div>
+                            <div class="col-xl-4 col-md-5 col-sm-6">
+                                <button class="btn btn-action-1 w-100 px-xl-0">
+                                    Send message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-4 mb-8 mb-md-0" data-aos="fade-down" data-aos-delay="400">
+                    <h5 class="mb-2 fs-4">
+                        New York, NY
+                    </h5>
+                    <p class="mb-0">
+                        62 West 55th Street,
+                        <br>Suite 302 New York, NY, 10230
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3 mb-8 mb-md-0" data-aos="fade-down" data-aos-delay="500">
+                    <h5 class="mb-2 fs-4">
+                        San Francisco, CA
+                    </h5>
+                    <p class="mb-0">
+                        560 Judah St &amp; 15th Ave,
+                        <br>Apt. 5 San Francisco, CA, 230903
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3" data-aos="fade-down" data-aos-delay="650">
+                    <h5 class="mb-2 fs-4">
+                        Dubai
+                    </h5>
+                    <p class="mb-0">
+                        U237-02, Gold Tower,
+                        <br>Jumeirah Lakes Towers, Dubai, UAE
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact 3 -->
+    <section class="py-10 py-lg-20 bg-bg-3">
+        <div class="container">
+            <h2 class="text-center display-5 mb-6" data-aos="fade-down" data-aos-delay="0">
+                Contact us
+            </h2>
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-lg-5 col-md-7 col-sm-9">
+                    <form action="form-handler.php" method="post" enctype="multipart/form-data" class="js-ajax-form"
+                        data-aos="fade-down" data-aos-delay="150">
+                        <!-- forms alerts -->
+                        <div class="alert alert-action-8 fixed-top invisible fade js-form-result" data-result="success"
+                            role="alert">
+                            <span class="js-form-alert-text" data-default-text="Thanks for your message!">
+                                Thanks for your message!
+                            </span>
+                        </div>
+                        <div class="alert alert-action-5 fixed-top invisible fade js-form-result" data-result="error"
+                            role="alert">
+                            <span class="js-form-alert-text">
+                                Error!
+                            </span>
+                        </div>
+                        <!-- forms alerts end -->
+                        <label class="fs-6 fw-bold text-dark-1 mb-3">
+                            Name
+                        </label>
+                        <input type="text" name="name" placeholder="Billie Reynolds"
+                            class="mb-6 form-control border border-dark-3">
+                        <label class="fs-6 fw-bold text-dark-1 mb-3">
+                            Email
+                        </label>
+                        <input type="email" name="email" placeholder="example@mail.com"
+                            class="form-control border border-dark-3 mb-6">
+                        <label class="fs-6 fw-bold text-dark-1 mb-3">
+                            Subject
+                        </label>
+                        <select name="subject" class="form-select border border-dark-3 mb-6">
+                            <option selected="selected">
+                                Question
+                            </option>
+                            <option>
+                                Suggestion
+                            </option>
+                            <option>
+                                Bug report
+                            </option>
+                        </select>
+                        <label class="fs-6 fw-bold text-dark-1 mb-3">
+                            Message
+                        </label>
+                        <textarea name="message" placeholder="Type here short description"
+                            class="form-control border border-dark-3 mb-6" rows="5"></textarea>
+                        <label class="form-check mb-6">
+                            <input class="form-check-input" type="checkbox" name="checkbox" checked="checked">
+                            <span class="form-check-label">
+                                Subscribe to our newsletter
+                            </span>
+                        </label>
+                        <button class="btn btn-action-1 w-100">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact 4 -->
+    <section class="py-10 py-lg-20 bg-bg-3">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-sm-10 col-md-6 col-lg-5 mb-12 mb-md-0">
+                    <h2 class="display-5 mb-6" data-aos="fade-down" data-aos-delay="0">
+                        Gather incredible ideas for your own startup
+                    </h2>
+                    <p class="fs-1 mb-8" data-aos="fade-down" data-aos-delay="150">
+                        Meet your new sidekick. The powerful tool that helps you create something special.
+                    </p>
+                    <div class="position-relative mb-5" data-aos="fade-down" data-aos-delay="250">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="fill-action-1 position-absolute top-0 start-0">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17 2H8C7.60218 2 7.22064 2.15804 6.93934 2.43934C6.65804 2.72064 6.5 3.10218 6.5 3.5V21.5C6.5 21.8978 6.65804 22.2794 6.93934 22.5607C7.22064 22.842 7.60218 23 8 23H17C17.3978 23 17.7794 22.842 18.0607 22.5607C18.342 22.2794 18.5 21.8978 18.5 21.5V3.5C18.5 3.10218 18.342 2.72064 18.0607 2.43934C17.7794 2.15804 17.3978 2 17 2ZM8 0.5C7.20435 0.5 6.44129 0.816071 5.87868 1.37868C5.31607 1.94129 5 2.70435 5 3.5V21.5C5 22.2956 5.31607 23.0587 5.87868 23.6213C6.44129 24.1839 7.20435 24.5 8 24.5H17C17.7956 24.5 18.5587 24.1839 19.1213 23.6213C19.6839 23.0587 20 22.2956 20 21.5V3.5C20 2.70435 19.6839 1.94129 19.1213 1.37868C18.5587 0.816071 17.7956 0.5 17 0.5L8 0.5Z">
+                            </path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.5 21.5C12.8978 21.5 13.2794 21.342 13.5607 21.0607C13.842 20.7794 14 20.3978 14 20C14 19.6022 13.842 19.2206 13.5607 18.9393C13.2794 18.658 12.8978 18.5 12.5 18.5C12.1022 18.5 11.7206 18.658 11.4393 18.9393C11.158 19.2206 11 19.6022 11 20C11 20.3978 11.158 20.7794 11.4393 21.0607C11.7206 21.342 12.1022 21.5 12.5 21.5Z">
+                            </path>
+                        </svg>
+                        <p class="ps-10 mb-0 fs-4 text-dark-1">
+                            +1 555 505 5050
+                        </p>
+                    </div>
+                    <div class="position-relative mb-5" data-aos="fade-down" data-aos-delay="400">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="fill-action-1 position-absolute top-0 start-0">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M21.5002 5H3.50024C3.10242 5 2.72089 5.15804 2.43958 5.43934C2.15828 5.72064 2.00024 6.10218 2.00024 6.5V6.82525L12.5002 13.1255L23.0002 6.82518V6.5C23.0002 6.10218 22.8422 5.72064 22.5609 5.43934C22.2796 5.15804 21.8981 5 21.5002 5ZM0.500244 7.27068C0.499919 7.25793 0.499919 7.24517 0.500244 7.23241V6.5C0.500244 5.70435 0.816315 4.94129 1.37892 4.37868C1.94153 3.81607 2.70459 3.5 3.50024 3.5H21.5002C22.2959 3.5 23.059 3.81607 23.6216 4.37868C24.1842 4.94129 24.5002 5.70435 24.5002 6.5V7.2394V7.2606V18.5C24.5002 19.2956 24.1842 20.0587 23.6216 20.6213C23.059 21.1839 22.2959 21.5 21.5002 21.5H3.50024C2.70459 21.5 1.94153 21.1839 1.37892 20.6213C0.816315 20.0587 0.500244 19.2956 0.500244 18.5V7.27068ZM23.0002 17.194V8.57474L15.7162 12.945L23.0002 17.194ZM22.9461 18.8995L14.3722 13.898L14.2482 13.8257L12.5002 14.8745L10.7519 13.8258L10.6282 13.898L2.05439 18.8994C2.12287 19.1473 2.25456 19.3756 2.43958 19.5607C2.72089 19.842 3.10242 20 3.50024 20H21.5002C21.8981 20 22.2796 19.842 22.5609 19.5607C22.7459 19.3757 22.8776 19.1473 22.9461 18.8995ZM2.00024 17.194V8.57616L9.28386 12.9452L2.00024 17.194Z">
+                            </path>
+                        </svg>
+                        <p class="ps-10 mb-0 fs-4 text-dark-1">
+                            hello@designmodo.com
+                        </p>
+                    </div>
+                    <div class="position-relative" data-aos="fade-down" data-aos-delay="500">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="fill-action-1 position-absolute top-0 start-0">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M24.2255 0.919479C24.3114 0.989882 24.3805 1.07848 24.428 1.17887C24.4755 1.27925 24.5001 1.38893 24.5 1.49998V21C24.4999 21.1733 24.4398 21.3412 24.3298 21.4752C24.2199 21.6092 24.067 21.701 23.897 21.735L16.397 23.235C16.3 23.2543 16.2 23.2543 16.103 23.235L8.75 21.765L1.397 23.235C1.28823 23.2567 1.176 23.2541 1.06838 23.2272C0.960764 23.2003 0.860444 23.15 0.774649 23.0797C0.688854 23.0093 0.61972 22.9209 0.572228 22.8207C0.524735 22.7204 0.500067 22.6109 0.5 22.5V2.99998C0.500105 2.82666 0.560234 2.65873 0.670165 2.52473C0.780096 2.39074 0.933042 2.29895 1.103 2.26498L8.603 0.764979C8.70004 0.745583 8.79996 0.745583 8.897 0.764979L16.25 2.23498L23.603 0.764979C23.7117 0.743103 23.824 0.745613 23.9316 0.772329C24.0392 0.799045 24.1396 0.849301 24.2255 0.919479ZM15.5 3.61498L9.5 2.41498V20.385L15.5 21.585V3.61498ZM17 21.585L23 20.385V2.41498L17 3.61498V21.585ZM8 20.385V2.41498L2 3.61498V21.585L8 20.385Z">
+                            </path>
+                        </svg>
+                        <p class="ps-10 mb-0 fs-4 text-dark-1 remove-br">
+                            San Francisco, CA560 Bush St &amp; 20th
+                            <br>Ave, Apt5 San Francisco, 230909
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-5 col-sm-9" data-aos="fade-down" data-aos-delay="650">
+                    <form action="form-handler.php" method="post" enctype="multipart/form-data" class="js-ajax-form">
+                        <!-- forms alerts -->
+                        <div class="alert alert-action-8 fixed-top invisible fade js-form-result" data-result="success"
+                            role="alert">
+                            <span class="js-form-alert-text" data-default-text="Thanks for your message!">
+                                Thanks for your message!
+                            </span>
+                        </div>
+                        <div class="alert alert-action-5 fixed-top invisible fade js-form-result" data-result="error"
+                            role="alert">
+                            <span class="js-form-alert-text">
+                                Error!
+                            </span>
+                        </div>
+                        <!-- forms alerts end -->
+                        <input type="text" name="name" placeholder="Name" class="mb-6 form-control border border-dark-3"
+                            required="required">
+                        <input type="email" name="email" placeholder="Email"
+                            class="mb-6 form-control border border-dark-3" required="required">
+                        <textarea name="message" placeholder="Message" class="mb-6 form-control border border-dark-3"
+                            rows="5" required="required"></textarea>
+                        <label class="form-check mb-6">
+                            <input class="form-check-input" type="checkbox" name="checkbox" checked="checked">
+                            <span class="form-check-label text-dark-1 fs-5">
+                                Subscribe to our newsletter
+                            </span>
+                        </label>
+                        <button class="btn btn-action-1 w-100">
+                            Send message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact 5 -->
+    <section class="py-10 py-lg-20 bg-bg-3">
+        <div class="container">
+            <div class="row justify-content-between align-items-center flex-md-row-reverse">
+                <div class="col-lg-5 col-md-6 mb-12 mb-md-0">
+                    <h2 class="display-5 mb-6" data-aos="fade-down" data-aos-delay="0">
+                        Gather incredible ideas for your own startup
+                    </h2>
+                    <p class="fs-1 mb-8" data-aos="fade-down" data-aos-delay="150">
+                        Meet your new sidekick. The powerful tool that helps you create something special.
+                    </p>
+                    <div class="position-relative mb-5" data-aos="fade-down" data-aos-delay="250">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="fill-dark-1 position-absolute top-0 start-0">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17 2H8C7.60218 2 7.22064 2.15804 6.93934 2.43934C6.65804 2.72064 6.5 3.10218 6.5 3.5V21.5C6.5 21.8978 6.65804 22.2794 6.93934 22.5607C7.22064 22.842 7.60218 23 8 23H17C17.3978 23 17.7794 22.842 18.0607 22.5607C18.342 22.2794 18.5 21.8978 18.5 21.5V3.5C18.5 3.10218 18.342 2.72064 18.0607 2.43934C17.7794 2.15804 17.3978 2 17 2ZM8 0.5C7.20435 0.5 6.44129 0.816071 5.87868 1.37868C5.31607 1.94129 5 2.70435 5 3.5V21.5C5 22.2956 5.31607 23.0587 5.87868 23.6213C6.44129 24.1839 7.20435 24.5 8 24.5H17C17.7956 24.5 18.5587 24.1839 19.1213 23.6213C19.6839 23.0587 20 22.2956 20 21.5V3.5C20 2.70435 19.6839 1.94129 19.1213 1.37868C18.5587 0.816071 17.7956 0.5 17 0.5L8 0.5Z"
+                                fill="#3C7EFF">
+                            </path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.5 21.5C12.8978 21.5 13.2794 21.342 13.5607 21.0607C13.842 20.7794 14 20.3978 14 20C14 19.6022 13.842 19.2206 13.5607 18.9393C13.2794 18.658 12.8978 18.5 12.5 18.5C12.1022 18.5 11.7206 18.658 11.4393 18.9393C11.158 19.2206 11 19.6022 11 20C11 20.3978 11.158 20.7794 11.4393 21.0607C11.7206 21.342 12.1022 21.5 12.5 21.5Z"
+                                fill="#3C7EFF">
+                            </path>
+                        </svg>
+                        <p class="ps-10 mb-0 fs-4 text-dark-1">
+                            +1 555 505 5050
+                        </p>
+                    </div>
+                    <div class="position-relative mb-5" data-aos="fade-down" data-aos-delay="400">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="fill-dark-1 position-absolute top-0 start-0">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M21.5002 5H3.50024C3.10242 5 2.72089 5.15804 2.43958 5.43934C2.15828 5.72064 2.00024 6.10218 2.00024 6.5V6.82525L12.5002 13.1255L23.0002 6.82518V6.5C23.0002 6.10218 22.8422 5.72064 22.5609 5.43934C22.2796 5.15804 21.8981 5 21.5002 5ZM0.500244 7.27068C0.499919 7.25793 0.499919 7.24517 0.500244 7.23241V6.5C0.500244 5.70435 0.816315 4.94129 1.37892 4.37868C1.94153 3.81607 2.70459 3.5 3.50024 3.5H21.5002C22.2959 3.5 23.059 3.81607 23.6216 4.37868C24.1842 4.94129 24.5002 5.70435 24.5002 6.5V7.2394V7.2606V18.5C24.5002 19.2956 24.1842 20.0587 23.6216 20.6213C23.059 21.1839 22.2959 21.5 21.5002 21.5H3.50024C2.70459 21.5 1.94153 21.1839 1.37892 20.6213C0.816315 20.0587 0.500244 19.2956 0.500244 18.5V7.27068ZM23.0002 17.194V8.57474L15.7162 12.945L23.0002 17.194ZM22.9461 18.8995L14.3722 13.898L14.2482 13.8257L12.5002 14.8745L10.7519 13.8258L10.6282 13.898L2.05439 18.8994C2.12287 19.1473 2.25456 19.3756 2.43958 19.5607C2.72089 19.842 3.10242 20 3.50024 20H21.5002C21.8981 20 22.2796 19.842 22.5609 19.5607C22.7459 19.3757 22.8776 19.1473 22.9461 18.8995ZM2.00024 17.194V8.57616L9.28386 12.9452L2.00024 17.194Z"
+                                fill="#3C7EFF">
+                            </path>
+                        </svg>
+                        <p class="ps-10 mb-0 fs-4 text-dark-1">
+                            hello@designmodo.com
+                        </p>
+                    </div>
+                    <div class="position-relative" data-aos="fade-down" data-aos-delay="500">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="fill-dark-1 position-absolute top-0 start-0">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M24.2255 0.919479C24.3114 0.989882 24.3805 1.07848 24.428 1.17887C24.4755 1.27925 24.5001 1.38893 24.5 1.49998V21C24.4999 21.1733 24.4398 21.3412 24.3298 21.4752C24.2199 21.6092 24.067 21.701 23.897 21.735L16.397 23.235C16.3 23.2543 16.2 23.2543 16.103 23.235L8.75 21.765L1.397 23.235C1.28823 23.2567 1.176 23.2541 1.06838 23.2272C0.960764 23.2003 0.860444 23.15 0.774649 23.0797C0.688854 23.0093 0.61972 22.9209 0.572228 22.8207C0.524735 22.7204 0.500067 22.6109 0.5 22.5V2.99998C0.500105 2.82666 0.560234 2.65873 0.670165 2.52473C0.780096 2.39074 0.933042 2.29895 1.103 2.26498L8.603 0.764979C8.70004 0.745583 8.79996 0.745583 8.897 0.764979L16.25 2.23498L23.603 0.764979C23.7117 0.743103 23.824 0.745613 23.9316 0.772329C24.0392 0.799045 24.1396 0.849301 24.2255 0.919479ZM15.5 3.61498L9.5 2.41498V20.385L15.5 21.585V3.61498ZM17 21.585L23 20.385V2.41498L17 3.61498V21.585ZM8 20.385V2.41498L2 3.61498V21.585L8 20.385Z"
+                                fill="#3C7EFF">
+                            </path>
+                        </svg>
+                        <p class="ps-10 mb-0 fs-4 text-dark-1 remove-br">
+                            San Francisco, CA560 Bush St &amp; 20th
+                            <br>Ave, Apt5 San Francisco, 230909
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 pe-md-12 pe-lg-3 align-self-stretch" data-aos="fade-down"
+                    data-aos-delay="650">
+                    <iframe class="w-100 h-100"
+                        src="https://maps.google.com/maps?q=50%20N%201st%20St,%204i%20Brooklyn,%20NY%2011249&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                        scrolling="no" data-aos="fade-down" data-aos-delay="650" style="min-height:27rem;">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact 6 -->
+    <section class="py-10 py-lg-20 bg-bg-3 text-center">
+        <div class="container">
+            <p class="fs-1" data-aos="fade-down" data-aos-delay="0">
+                Contact us
+            </p>
+            <h1 class="mb-10 mb-lg-15" data-aos="fade-down" data-aos-delay="150">
+                hello@designmodo.com
+            </h1>
+            <iframe class="w-100 mb-10 mb-lg-15"
+                src="https://maps.google.com/maps?q=50%20N%201st%20St,%204i%20Brooklyn,%20NY%2011249&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                style="min-height:25rem;" scrolling="no" data-aos="fade-down" data-aos-delay="250">
+            </iframe>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-4 mb-8 mb-md-0" data-aos="fade-down" data-aos-delay="400">
+                    <h5 class="fs-4 mb-2">
+                        Office 1
+                    </h5>
+                    <p class="mb-0">
+                        62 West 55th Street,
+                        <br>Suite 302 New York, NY, 10230
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3 mb-8 mb-md-0" data-aos="fade-down" data-aos-delay="500">
+                    <h5 class="fs-4 mb-2">
+                        Office 2
+                    </h5>
+                    <p class="mb-0">
+                        560 Judah St &amp; 15th Ave,
+                        <br>Apt. 5 San Francisco, CA, 230903
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3" data-aos="fade-down" data-aos-delay="650">
+                    <h5 class="fs-4 mb-2">
+                        Office 3
+                    </h5>
+                    <p class="mb-0">
+                        U237-02, Gold Tower,
+                        <br>Jumeirah Lakes Towers, Dubai, UAE
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-10 py-lg-20 bg-bg-3 text-center">
+        <div class="container">
+            <p class="fs-1" data-aos="fade-down" data-aos-delay="0">
+                Contact us
+            </p>
+            <h1 class="mb-10 mb-lg-15" data-aos="fade-down" data-aos-delay="150">
+                hello@designmodo.com
+            </h1>
+            <iframe class="w-100 mb-10 mb-lg-15"
+                src="https://maps.google.com/maps?width=1853&amp;height=400&amp;hl=en&amp;q=frontiir pyay road&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                style="min-height:25rem;" scrolling="no" data-aos="fade-down" data-aos-delay="250">
+            </iframe>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-4 mb-8 mb-md-0" data-aos="fade-down" data-aos-delay="400">
+                    <h5 class="fs-4 mb-2">
+                        Frontiir Office
+                    </h5>
+                    <p class="mb-0">
+                        Pyay Road
+                        <br>Yangon
+                    </p>
+                </div>
+            </div>
+    </section>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        data-integrity="38d870e9c3c4e532551b530706abb811"></script>
+
+    <!-- AOS 3.0.0-beta.6 plugin JS (Animations) -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Startup Plugins -->
+    <script src="app-dist/js/plugins.min.js?v=5.6.692"></script>
+
+    <!-- Startup JS (Custom js for all blocks) - Remove ".min" if you want to edit a JS code -->
+    <script src="app-dist/js/scripts.min.js?v=5.6.692"></script>
+
+    <!-- Startup scripts runner (for preview only, this code won't be added in the export) -->
+    <script>
+        document.runStartupScripts = function (functionToRun, params) {
+            console.log("fired runStartupScripts(" + functionToRun + ")");
+            var startupFunctions = {
+                setBackgrounds: function () { setBackgrounds() },
+                switchControlSlider: function () { switchControlSlider() },
+                stopYouTubeOnModalClose: function () { stopYouTubeOnModalClose() },
+                initAnimations: function () { initAnimations(params) },
+                reInitAnimations: function () {
+                    if (params) {
+                        var elements;
+                        var settings = Object.assign({}, params);
+                        settings.animationSpeed = parseInt(settings.animationSpeed);
+                        if (settings.animation) {
+                            elements = document.querySelectorAll("*[sf-anim-delay]");
+                            if (elements.length) {
+                                elements.forEach(function (el) {
+                                    settings.delay = settings.animationSpeed * 50 * parseFloat(el.getAttribute("sf-anim-delay"));
+                                    if (settings.delay % 50 != 0) {
+                                        settings.delay += settings.delay % 50;
+                                    }
+                                    settings.style = el.getAttribute("sf-anim-style");
+                                    if (settings.style == "" || settings.style == undefined) {
+                                        settings.style = settings.animationStyle;
+                                    }
+                                    el.classList.remove("aos-animate", "aos-init");
+                                    el.setAttribute("data-aos", settings.style);
+                                    el.setAttribute("data-aos-delay", settings.delay);
+                                });
+                            }
+                            settings.animationSpeed = settings.animationSpeed * 100;
+                            initAnimations(settings.animationSpeed);
+                            elements = document.querySelectorAll(".aos-init");
+                            if (elements.length) {
+                                elements.forEach(function (el) {
+                                    el.classList.remove("aos-animate");
+                                });
+                                if (settings.timeOut) {
+                                    clearTimeout(settings.timeOut);
+                                }
+                                settings.timeOut = setTimeout(function () {
+                                    elements.forEach(function (el) {
+                                        el.classList.add("aos-animate");
+                                    });
+                                }, settings.animationSpeed);
+                            }
+                        } else {
+                            elements = document.querySelectorAll(".aos-init");
+                            if (elements.length) {
+                                elements.forEach(function (el) {
+                                    el.removeAttribute("data-aos");
+                                    el.removeAttribute("data-aos-delay");
+                                    el.classList.remove("aos-animate", "aos-init");
+                                });
+                            }
+                        }
+                    }
+                },
+                showBsElement: function () {
+                    if (params) {
+                        if (params.classList.contains("offcanvas")) {
+                            var eBsElement = new bootstrap.Offcanvas(params);
+                        }
+                        if (params.classList.contains("modal")) {
+                            var eBsElement = new bootstrap.Modal(params);
+                        }
+                        if (params.classList.contains("dropdown-toggle")) {
+                            var eBsElement = new bootstrap.Dropdown(params);
+                        }
+                        eBsElement.show();
+                    }
+                },
+                destroyBsElements: function () {
+                    var elements = document.querySelectorAll(".offcanvas, .modal, .dropdown-toggle");
+                    var eBsElement;
+                    if (elements.length) {
+                        elements.forEach(function (el) {
+                            if (el.classList.contains("offcanvas")) {
+                                eBsElement = bootstrap.Offcanvas.getInstance(el);
+                            } else if (el.classList.contains("modal")) {
+                                eBsElement = bootstrap.Modal.getInstance(el);
+                            } else if (el.classList.contains("dropdown-toggle")) {
+                                eBsElement = bootstrap.Dropdown.getInstance(el);
+                            }
+                            if (eBsElement) {
+                                eBsElement.hide();
+                                el.style.display = "";
+                                el.style.visibility = "";
+                            }
+                        });
+                    }
+                },
+            };
+            if (functionToRun) {
+                startupFunctions[functionToRun](params);
+            } else {
+                Object.keys(startupFunctions).forEach(function (key) {
+                    if (key != "showBsElement" && key != "destroyBsElements") { // skip
+                        startupFunctions[key](params);
+                    }
+                });
+            }
+        };
+
+    </script>
+</body>
+
+</html>

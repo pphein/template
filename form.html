@@ -1,736 +1,848 @@
-
 <!DOCTYPE html>
-<html  lang="en">
-	<head>
-		<meta charset="utf-8" >
-		<title>Startup preview - Main page</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="custom" content="MjExMjc0" id="snextras">
-		<link rel="icon" href="i/favicon-default.png">
-		<!-- AOS 3.0.0-beta.6 plugin CSS (Animations) -->
-		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-		<!-- Google Fonts -->
-		<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@100;200;300;400;500;600;700;800;900&family=Marhey:wght@100;200;300;400;500;600;700;800;900&subset=latin&display=swap" rel="stylesheet" id="sf-google-fonts">
-		<!-- Startup CSS + Bootstrap CSS (Styles for all blocks) - Remove ".min" if you want to edit a css code -->
-		<!-- <link href="https://designmodo.com/startup/app/pub/211274/7f11ca0d526f3dfe8df9f7ac75a9c4eb/styles/css/styles.min.css?v=1685787577" rel="stylesheet" id="sf-custom-css" /> -->
-		<!-- jQuery 3.6.0 (uncomment line below if you need jQuery) -->
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-		<!-- Styles for controls (delete, move, edit, block name) -->
-		<link href="app-dist/css/preview.css" rel="stylesheet" />
-        <link rel="stylesheet" href="app-dist/css/form.css">
-		<!-- Open graph settings (social networks sharing settings) -->
-		<meta name='twitter:card' content='summary_large_image'>
-		<!-- Open graph settings end -->
-	</head> 
-	<body>
-<!-- Form 1 -->
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Startup preview - Main page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="custom" content="MjExMjc0" id="snextras">
+	<link rel="icon" href="i/favicon-default.png">
+	<!-- AOS 3.0.0-beta.6 plugin CSS (Animations) -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!-- Google Fonts -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@100;200;300;400;500;600;700;800;900&family=Marhey:wght@100;200;300;400;500;600;700;800;900&subset=latin&display=swap"
+		rel="stylesheet" id="sf-google-fonts">
+	<!-- Startup CSS + Bootstrap CSS (Styles for all blocks) - Remove ".min" if you want to edit a css code -->
+	<!-- <link href="https://designmodo.com/startup/app/pub/211274/7f11ca0d526f3dfe8df9f7ac75a9c4eb/styles/css/styles.min.css?v=1685787577" rel="stylesheet" id="sf-custom-css" /> -->
+	<!-- jQuery 3.6.0 (uncomment line below if you need jQuery) -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+	<!-- Styles for controls (delete, move, edit, block name) -->
+	<link href="app-dist/css/preview.css" rel="stylesheet" />
+	<link rel="stylesheet" href="app-dist/css/form.css">
+	<!-- Open graph settings (social networks sharing settings) -->
+	<meta name='twitter:card' content='summary_large_image'>
+	<!-- Open graph settings end -->
+</head>
+
+<body>
+	<!-- Form 1 -->
 	<section class="bg-bg-3 py-10 py-lg-20 text-center">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-xl-4 col-lg-5 col-md-7 col-sm-10">
 					<h1 class="mb-6" data-aos="fade-down" data-aos-delay="0">
-                        Sign Up
+						Sign Up
 					</h1>
 					<form action="form-handler.php" method="post" enctype="multipart/form-data" class="js-ajax-form">
 						<!-- forms alerts -->
-							<div class="alert alert-action-8 fixed-top invisible fade js-form-result" data-result="success" role="alert">
-								<span class="js-form-alert-text" data-default-text="Thanks for your message!">
-									Thanks for your message!
-								</span>
+						<div class="alert alert-action-8 fixed-top invisible fade js-form-result" data-result="success"
+							role="alert">
+							<span class="js-form-alert-text" data-default-text="Thanks for your message!">
+								Thanks for your message!
+							</span>
+						</div>
+						<div class="alert alert-action-5 fixed-top invisible fade js-form-result" data-result="error"
+							role="alert">
+							<span class="js-form-alert-text">
+								Error!
+							</span>
+						</div>
+						<!-- forms alerts end -->
+						<div class="row justify-content-center">
+							<div class="mb-6 col-6" data-aos="fade-down" data-aos-delay="150">
+								<div class="input-group">
+									<input type="text" name="firstname" placeholder="First name"
+										class="form-control border border-dark-3" required="required">
+								</div>
 							</div>
-							<div class="alert alert-action-5 fixed-top invisible fade js-form-result" data-result="error" role="alert">
-								<span class="js-form-alert-text">
-									Error!
-								</span>
+							<div class="mb-6 col-6" data-aos="fade-down" data-aos-delay="250">
+								<div class="input-group">
+									<input type="text" name="lastname" placeholder="Last name"
+										class="form-control border border-dark-3" required="required">
+								</div>
 							</div>
-							<!-- forms alerts end -->
-								<div class="row justify-content-center">
-									<div class="mb-6 col-6" data-aos="fade-down" data-aos-delay="150">
-										<div class="input-group">
-											<input type="text" name="firstname" placeholder="First name" class="form-control border border-dark-3" required="required">																						
-										</div>
-									</div>
-									<div class="mb-6 col-6" data-aos="fade-down" data-aos-delay="250">
-										<div class="input-group">
-											<input type="text" name="lastname" placeholder="Last name" class="form-control border border-dark-3" required="required">																						
-										</div>
-									</div>
-								</div>
-								<div class="input-group mb-6" data-aos="fade-down" data-aos-delay="400">
-									<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
-										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.5002 3.75H2.5002C2.16868 3.75 1.85074 3.8817 1.61632 4.11612C1.3819 4.35054 1.2502 4.66848 1.2502 5V5.27104L10.0002 10.5213L18.7502 5.27098V5C18.7502 4.66848 18.6185 4.35054 18.3841 4.11612C18.1497 3.8817 17.8317 3.75 17.5002 3.75ZM0.000203451 5.64224C-6.77314e-05 5.63161 -6.79025e-05 5.62098 0.000203451 5.61034V5C0.000203451 4.33696 0.263596 3.70107 0.732437 3.23223C1.20128 2.76339 1.83716 2.5 2.5002 2.5H17.5002C18.1632 2.5 18.7991 2.76339 19.268 3.23223C19.7368 3.70107 20.0002 4.33696 20.0002 5V5.61604V5.63397V15C20.0002 15.663 19.7368 16.2989 19.268 16.7678C18.7991 17.2366 18.1632 17.5 17.5002 17.5H2.5002C1.83716 17.5 1.20128 17.2366 0.732437 16.7678C0.263596 16.2989 0.000203451 15.663 0.000203451 15V5.64224ZM18.7502 13.9117V6.72895L12.6801 10.3708L18.7502 13.9117ZM18.7051 15.3329L11.5602 11.165L11.4569 11.1048L10.0002 11.9788L8.54329 11.1049L8.44016 11.165L1.29533 15.3328C1.35239 15.5394 1.46213 15.7297 1.61632 15.8839C1.85074 16.1183 2.16868 16.25 2.5002 16.25H17.5002C17.8317 16.25 18.1497 16.1183 18.3841 15.8839C18.5383 15.7297 18.648 15.5394 18.7051 15.3329ZM1.2502 13.9117V6.73013L7.31989 10.371L1.2502 13.9117Z">
-											</path>
-										</svg>
-									</div>
-									<input type="email" name="email" placeholder="Email address" class="form-control border-start-0 border-dark-3 ps-1" required="required">																						
-								</div>
-								<div class="input-group mb-6" data-aos="fade-down" data-aos-delay="500">
-									<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
-										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M14.375 10H5.625C5.29348 10 4.97554 10.1317 4.74112 10.3661C4.5067 10.6005 4.375 10.9185 4.375 11.25V17.5C4.375 17.8315 4.5067 18.1495 4.74112 18.3839C4.97554 18.6183 5.29348 18.75 5.625 18.75H14.375C14.7065 18.75 15.0245 18.6183 15.2589 18.3839C15.4933 18.1495 15.625 17.8315 15.625 17.5V11.25C15.625 10.9185 15.4933 10.6005 15.2589 10.3661C15.0245 10.1317 14.7065 10 14.375 10ZM5.625 8.75C4.96196 8.75 4.32607 9.01339 3.85723 9.48223C3.38839 9.95107 3.125 10.587 3.125 11.25V17.5C3.125 18.163 3.38839 18.7989 3.85723 19.2678C4.32607 19.7366 4.96196 20 5.625 20H14.375C15.038 20 15.6739 19.7366 16.1428 19.2678C16.6116 18.7989 16.875 18.163 16.875 17.5V11.25C16.875 10.587 16.6116 9.95107 16.1428 9.48223C15.6739 9.01339 15.038 8.75 14.375 8.75H5.625ZM5.625 5C5.625 3.83968 6.08594 2.72688 6.90641 1.90641C7.72688 1.08594 8.83968 0.625 10 0.625C11.1603 0.625 12.2731 1.08594 13.0936 1.90641C13.9141 2.72688 14.375 3.83968 14.375 5V8.75H13.125V5C13.125 4.1712 12.7958 3.37634 12.2097 2.79029C11.6237 2.20424 10.8288 1.875 10 1.875C9.1712 1.875 8.37634 2.20424 7.79029 2.79029C7.20424 3.37634 6.875 4.1712 6.875 5V8.75H5.625V5Z">
-											</path>
-										</svg>
-									</div>
-									<input type="password" name="password" placeholder="Password" class="form-control border-start-0 border-dark-3 ps-1" required="required">																						
-								</div>
-								<label class="form-check" data-aos="fade-down" data-aos-delay="650">
-									<input class="form-check-input" type="checkbox" name="subscribe" checked="checked">
-									<p class="text-start ms-9 text-dark-1 mb-6">
-					Subscribe to our newsletter
-									</p>
-								</label>
-								<button class="btn btn-action-1 w-100 mb-6" data-aos="fade-down" data-aos-delay="750">
-						Sign Up
-								</button>
-								<p class="d-inline-block text-dark-3 mb-0" data-aos="fade-down" data-aos-delay="900">
-                        Already have an account? 
-								</p>
-								<a href="#" class="ms-1" data-aos="fade-down" data-aos-delay="900">
-                        Log In
+						</div>
+						<div class="input-group mb-6" data-aos="fade-down" data-aos-delay="400">
+							<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M17.5002 3.75H2.5002C2.16868 3.75 1.85074 3.8817 1.61632 4.11612C1.3819 4.35054 1.2502 4.66848 1.2502 5V5.27104L10.0002 10.5213L18.7502 5.27098V5C18.7502 4.66848 18.6185 4.35054 18.3841 4.11612C18.1497 3.8817 17.8317 3.75 17.5002 3.75ZM0.000203451 5.64224C-6.77314e-05 5.63161 -6.79025e-05 5.62098 0.000203451 5.61034V5C0.000203451 4.33696 0.263596 3.70107 0.732437 3.23223C1.20128 2.76339 1.83716 2.5 2.5002 2.5H17.5002C18.1632 2.5 18.7991 2.76339 19.268 3.23223C19.7368 3.70107 20.0002 4.33696 20.0002 5V5.61604V5.63397V15C20.0002 15.663 19.7368 16.2989 19.268 16.7678C18.7991 17.2366 18.1632 17.5 17.5002 17.5H2.5002C1.83716 17.5 1.20128 17.2366 0.732437 16.7678C0.263596 16.2989 0.000203451 15.663 0.000203451 15V5.64224ZM18.7502 13.9117V6.72895L12.6801 10.3708L18.7502 13.9117ZM18.7051 15.3329L11.5602 11.165L11.4569 11.1048L10.0002 11.9788L8.54329 11.1049L8.44016 11.165L1.29533 15.3328C1.35239 15.5394 1.46213 15.7297 1.61632 15.8839C1.85074 16.1183 2.16868 16.25 2.5002 16.25H17.5002C17.8317 16.25 18.1497 16.1183 18.3841 15.8839C18.5383 15.7297 18.648 15.5394 18.7051 15.3329ZM1.2502 13.9117V6.73013L7.31989 10.371L1.2502 13.9117Z">
+									</path>
+								</svg>
+							</div>
+							<input type="email" name="email" placeholder="Email address"
+								class="form-control border-start-0 border-dark-3 ps-1" required="required">
+						</div>
+						<div class="input-group mb-6" data-aos="fade-down" data-aos-delay="500">
+							<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M14.375 10H5.625C5.29348 10 4.97554 10.1317 4.74112 10.3661C4.5067 10.6005 4.375 10.9185 4.375 11.25V17.5C4.375 17.8315 4.5067 18.1495 4.74112 18.3839C4.97554 18.6183 5.29348 18.75 5.625 18.75H14.375C14.7065 18.75 15.0245 18.6183 15.2589 18.3839C15.4933 18.1495 15.625 17.8315 15.625 17.5V11.25C15.625 10.9185 15.4933 10.6005 15.2589 10.3661C15.0245 10.1317 14.7065 10 14.375 10ZM5.625 8.75C4.96196 8.75 4.32607 9.01339 3.85723 9.48223C3.38839 9.95107 3.125 10.587 3.125 11.25V17.5C3.125 18.163 3.38839 18.7989 3.85723 19.2678C4.32607 19.7366 4.96196 20 5.625 20H14.375C15.038 20 15.6739 19.7366 16.1428 19.2678C16.6116 18.7989 16.875 18.163 16.875 17.5V11.25C16.875 10.587 16.6116 9.95107 16.1428 9.48223C15.6739 9.01339 15.038 8.75 14.375 8.75H5.625ZM5.625 5C5.625 3.83968 6.08594 2.72688 6.90641 1.90641C7.72688 1.08594 8.83968 0.625 10 0.625C11.1603 0.625 12.2731 1.08594 13.0936 1.90641C13.9141 2.72688 14.375 3.83968 14.375 5V8.75H13.125V5C13.125 4.1712 12.7958 3.37634 12.2097 2.79029C11.6237 2.20424 10.8288 1.875 10 1.875C9.1712 1.875 8.37634 2.20424 7.79029 2.79029C7.20424 3.37634 6.875 4.1712 6.875 5V8.75H5.625V5Z">
+									</path>
+								</svg>
+							</div>
+							<input type="password" name="password" placeholder="Password"
+								class="form-control border-start-0 border-dark-3 ps-1" required="required">
+						</div>
+						<label class="form-check" data-aos="fade-down" data-aos-delay="650">
+							<input class="form-check-input" type="checkbox" name="subscribe" checked="checked">
+							<p class="text-start ms-9 text-dark-1 mb-6">
+								Subscribe to our newsletter
+							</p>
+						</label>
+						<button class="btn btn-action-1 w-100 mb-6" data-aos="fade-down" data-aos-delay="750">
+							Sign Up
+						</button>
+						<p class="d-inline-block text-dark-3 mb-0" data-aos="fade-down" data-aos-delay="900">
+							Already have an account?
+						</p>
+						<a href="#" class="ms-1" data-aos="fade-down" data-aos-delay="900">
+							Log In
+						</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Form 2 -->
+	<section class="bg-bg-3 py-10 py-lg-20 text-center">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-4 col-lg-5 col-md-7 col-sm-10">
+					<h1 class="mb-6" data-aos="fade-down" data-aos-delay="0">
+						Sign In
+					</h1>
+					<form action="form-handler.php" method="post" enctype="multipart/form-data" class="js-ajax-form">
+						<!-- forms alerts -->
+						<div class="alert alert-action-8 fixed-top invisible fade js-form-result" data-result="success"
+							role="alert">
+							<span class="js-form-alert-text" data-default-text="Thanks for your message!">
+								Thanks for your message!
+							</span>
+						</div>
+						<div class="alert alert-action-5 fixed-top invisible fade js-form-result" data-result="error"
+							role="alert">
+							<span class="js-form-alert-text">
+								Error!
+							</span>
+						</div>
+						<!-- forms alerts end -->
+						<div class="input-group mb-6" data-aos="fade-down" data-aos-delay="150">
+							<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M17.5002 3.75H2.5002C2.16868 3.75 1.85074 3.8817 1.61632 4.11612C1.3819 4.35054 1.2502 4.66848 1.2502 5V5.27104L10.0002 10.5213L18.7502 5.27098V5C18.7502 4.66848 18.6185 4.35054 18.3841 4.11612C18.1497 3.8817 17.8317 3.75 17.5002 3.75ZM0.000203451 5.64224C-6.77314e-05 5.63161 -6.79025e-05 5.62098 0.000203451 5.61034V5C0.000203451 4.33696 0.263596 3.70107 0.732437 3.23223C1.20128 2.76339 1.83716 2.5 2.5002 2.5H17.5002C18.1632 2.5 18.7991 2.76339 19.268 3.23223C19.7368 3.70107 20.0002 4.33696 20.0002 5V5.61604V5.63397V15C20.0002 15.663 19.7368 16.2989 19.268 16.7678C18.7991 17.2366 18.1632 17.5 17.5002 17.5H2.5002C1.83716 17.5 1.20128 17.2366 0.732437 16.7678C0.263596 16.2989 0.000203451 15.663 0.000203451 15V5.64224ZM18.7502 13.9117V6.72895L12.6801 10.3708L18.7502 13.9117ZM18.7051 15.3329L11.5602 11.165L11.4569 11.1048L10.0002 11.9788L8.54329 11.1049L8.44016 11.165L1.29533 15.3328C1.35239 15.5394 1.46213 15.7297 1.61632 15.8839C1.85074 16.1183 2.16868 16.25 2.5002 16.25H17.5002C17.8317 16.25 18.1497 16.1183 18.3841 15.8839C18.5383 15.7297 18.648 15.5394 18.7051 15.3329ZM1.2502 13.9117V6.73013L7.31989 10.371L1.2502 13.9117Z">
+									</path>
+								</svg>
+							</div>
+							<input type="email" name="email" placeholder="Email address"
+								class="form-control border-start-0 border-dark-3 ps-1" required="required">
+						</div>
+						<div class="input-group mb-6" data-aos="fade-down" data-aos-delay="250">
+							<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M14.375 10H5.625C5.29348 10 4.97554 10.1317 4.74112 10.3661C4.5067 10.6005 4.375 10.9185 4.375 11.25V17.5C4.375 17.8315 4.5067 18.1495 4.74112 18.3839C4.97554 18.6183 5.29348 18.75 5.625 18.75H14.375C14.7065 18.75 15.0245 18.6183 15.2589 18.3839C15.4933 18.1495 15.625 17.8315 15.625 17.5V11.25C15.625 10.9185 15.4933 10.6005 15.2589 10.3661C15.0245 10.1317 14.7065 10 14.375 10ZM5.625 8.75C4.96196 8.75 4.32607 9.01339 3.85723 9.48223C3.38839 9.95107 3.125 10.587 3.125 11.25V17.5C3.125 18.163 3.38839 18.7989 3.85723 19.2678C4.32607 19.7366 4.96196 20 5.625 20H14.375C15.038 20 15.6739 19.7366 16.1428 19.2678C16.6116 18.7989 16.875 18.163 16.875 17.5V11.25C16.875 10.587 16.6116 9.95107 16.1428 9.48223C15.6739 9.01339 15.038 8.75 14.375 8.75H5.625ZM5.625 5C5.625 3.83968 6.08594 2.72688 6.90641 1.90641C7.72688 1.08594 8.83968 0.625 10 0.625C11.1603 0.625 12.2731 1.08594 13.0936 1.90641C13.9141 2.72688 14.375 3.83968 14.375 5V8.75H13.125V5C13.125 4.1712 12.7958 3.37634 12.2097 2.79029C11.6237 2.20424 10.8288 1.875 10 1.875C9.1712 1.875 8.37634 2.20424 7.79029 2.79029C7.20424 3.37634 6.875 4.1712 6.875 5V8.75H5.625V5Z">
+									</path>
+								</svg>
+							</div>
+							<input type="password" name="password" placeholder="Password"
+								class="form-control border-start-0 border-dark-3 ps-1" required="required">
+						</div>
+						<button class="btn btn-action-1 w-100 mb-6" data-aos="fade-down" data-aos-delay="400">
+							Sign In
+						</button>
+						<div data-aos="fade-down" data-aos-delay="250">
+							<p class="d-inline-block text-dark-3 mb-6">
+								Don’t have an account?
+							</p>
+							<a href="#" class="ms-1">
+								Log In
+							</a>
+						</div>
+						<div class="w-50 border-bottom border-bg-2 mx-auto mb-6" data-aos="fade-down"
+							data-aos-delay="400">
+						</div>
+						<p class="mb-6">
+							Sign In via socials
+						</p>
+						<div class="row g-0">
+							<div class="col-4 pe-2">
+								<a href="#"
+									class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg" class="fill-dark-1">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z">
+										</path>
+									</svg>
 								</a>
-							</form>
+							</div>
+							<div class="col-4 px-1">
+								<a href="#"
+									class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg" class="fill-dark-1">
+										<path
+											d="M19.4565 8.15425C19.5795 8.81325 19.6465 9.50225 19.6465 10.2213C19.6465 15.8453 15.8825 19.8442 10.1975 19.8442C8.90467 19.8446 7.62442 19.5903 6.42991 19.0957C5.23541 18.6012 4.15006 17.8761 3.23588 16.9619C2.3217 16.0477 1.59661 14.9624 1.10204 13.7679C0.607475 12.5733 0.353122 11.2931 0.353516 10.0003C0.353122 8.70741 0.607475 7.42716 1.10204 6.23265C1.59661 5.03814 2.3217 3.95279 3.23588 3.03861C4.15006 2.12443 5.23541 1.39935 6.42991 0.904778C7.62442 0.41021 8.90467 0.155856 10.1975 0.15625C12.8555 0.15625 15.0765 1.13425 16.7805 2.72225L14.0055 5.49725V5.49025C12.9725 4.50625 11.6615 4.00125 10.1975 4.00125C6.94952 4.00125 4.30952 6.74525 4.30952 9.99425C4.30952 13.2423 6.94952 15.9923 10.1975 15.9923C13.1445 15.9923 15.1505 14.3073 15.5625 11.9933H10.1975V8.15425H19.4575H19.4565Z">
+										</path>
+									</svg>
+								</a>
+							</div>
+							<div class="col-4 ps-2">
+								<a href="#"
+									class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center">
+									<svg width="24" height="20" viewBox="0 0 24 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg" class="fill-dark-1">
+										<path
+											d="M23.6435 2.93757C22.8085 3.30757 21.9115 3.55757 20.9685 3.67057C21.9415 3.08836 22.6694 2.17203 23.0165 1.09257C22.1023 1.63555 21.1018 2.01776 20.0585 2.22257C19.3569 1.47343 18.4276 0.976891 17.4148 0.810039C16.4021 0.643187 15.3626 0.815357 14.4577 1.29982C13.5529 1.78428 12.8333 2.55393 12.4107 3.48927C11.988 4.42461 11.886 5.47332 12.1205 6.47257C10.2682 6.37956 8.45613 5.89811 6.80192 5.05947C5.14772 4.22083 3.68834 3.04373 2.5185 1.60457C2.1185 2.29457 1.8885 3.09457 1.8885 3.94657C1.88805 4.71356 2.07693 5.46881 2.43838 6.1453C2.79982 6.82179 3.32266 7.3986 3.9605 7.82457C3.22078 7.80103 2.49737 7.60115 1.8505 7.24157V7.30156C1.85043 8.37731 2.22253 9.41994 2.90368 10.2526C3.58483 11.0852 4.53307 11.6565 5.5875 11.8696C4.90128 12.0553 4.18184 12.0826 3.4835 11.9496C3.781 12.8752 4.3605 13.6846 5.14087 14.2645C5.92124 14.8444 6.86342 15.1657 7.8355 15.1836C6.18533 16.479 4.14739 17.1817 2.0495 17.1786C1.67788 17.1787 1.30658 17.157 0.9375 17.1136C3.06698 18.4827 5.54584 19.2094 8.0775 19.2066C16.6475 19.2066 21.3325 12.1086 21.3325 5.95257C21.3325 5.75257 21.3275 5.55056 21.3185 5.35056C22.2298 4.69154 23.0164 3.87546 23.6415 2.94057L23.6435 2.93757Z">
+										</path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Form 3 -->
+	<section class="bg-bg-3 py-10 py-lg-20 text-center">
+		<div class="container">
+			<div class="row justify-content-center text-md-center">
+				<div class="col-lg-10 col-xl-8">
+					<h2 class="display-5 mb-6" data-aos="fade-down" data-aos-delay="0">
+						Better landing for your startup
+					</h2>
+				</div>
+				<div class="col-md-9 col-lg-7 col-xl-6 col-xxl-5 mb-10">
+					<p class="fs-2 mb-0" data-aos="fade-down" data-aos-delay="150">
+						Start growing in half the time with an
+						<span class="text-nowrap">
+							all-in-one
+						</span>
+						website builder - no more long hours spent on the boring stuff!
+					</p>
+				</div>
+			</div>
+			<form action="form-handler.php" method="post" enctype="multipart/form-data" class="js-ajax-form mb-10">
+				<!-- forms alerts -->
+				<div class="alert alert-action-8 fixed-top invisible fade js-form-result" data-result="success"
+					role="alert">
+					<span class="js-form-alert-text" data-default-text="Thanks for your message!">
+						Thanks for your message!
+					</span>
+				</div>
+				<div class="alert alert-action-5 fixed-top invisible fade js-form-result" data-result="error"
+					role="alert">
+					<span class="js-form-alert-text">
+						Error!
+					</span>
+				</div>
+				<!-- forms alerts end -->
+				<div class="row justify-content-center">
+					<div class="col-sm-10 col-md-7 col-lg-3 mb-4 mb-lg-0" data-aos="fade-down" data-aos-delay="250">
+						<div class="input-group">
+							<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M16.75 17.5C16.75 17.5 18 17.5 18 16.25C18 15 16.75 11.25 10.5 11.25C4.25 11.25 3 15 3 16.25C3 17.5 4.25 17.5 4.25 17.5H16.75ZM4.25625 16.32V16.3175V16.32ZM4.2775 16.25H16.7225C16.7284 16.2493 16.7342 16.2485 16.74 16.2475L16.75 16.245C16.7487 15.9375 16.5575 15.0125 15.71 14.165C14.895 13.35 13.3613 12.5 10.5 12.5C7.6375 12.5 6.105 13.35 5.29 14.165C4.4425 15.0125 4.2525 15.9375 4.25 16.245C4.25915 16.2468 4.26832 16.2484 4.2775 16.25V16.25ZM16.745 16.32V16.3175V16.32ZM10.5 8.75C11.163 8.75 11.7989 8.48661 12.2678 8.01777C12.7366 7.54893 13 6.91304 13 6.25C13 5.58696 12.7366 4.95107 12.2678 4.48223C11.7989 4.01339 11.163 3.75 10.5 3.75C9.83696 3.75 9.20107 4.01339 8.73223 4.48223C8.26339 4.95107 8 5.58696 8 6.25C8 6.91304 8.26339 7.54893 8.73223 8.01777C9.20107 8.48661 9.83696 8.75 10.5 8.75V8.75ZM14.25 6.25C14.25 7.24456 13.8549 8.19839 13.1517 8.90165C12.4484 9.60491 11.4946 10 10.5 10C9.50544 10 8.55161 9.60491 7.84835 8.90165C7.14509 8.19839 6.75 7.24456 6.75 6.25C6.75 5.25544 7.14509 4.30161 7.84835 3.59835C8.55161 2.89509 9.50544 2.5 10.5 2.5C11.4946 2.5 12.4484 2.89509 13.1517 3.59835C13.8549 4.30161 14.25 5.25544 14.25 6.25V6.25Z">
+									</path>
+								</svg>
+							</div>
+							<input type="text" name="name" placeholder="Name"
+								class="form-control border-start-0 border-dark-3 ps-1" required="required">
 						</div>
 					</div>
+					<div class="col-sm-10 col-md-7 col-lg-3 mb-4 mb-lg-0" data-aos="fade-down" data-aos-delay="400">
+						<div class="input-group">
+							<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M14.375 10H5.625C5.29348 10 4.97554 10.1317 4.74112 10.3661C4.5067 10.6005 4.375 10.9185 4.375 11.25V17.5C4.375 17.8315 4.5067 18.1495 4.74112 18.3839C4.97554 18.6183 5.29348 18.75 5.625 18.75H14.375C14.7065 18.75 15.0245 18.6183 15.2589 18.3839C15.4933 18.1495 15.625 17.8315 15.625 17.5V11.25C15.625 10.9185 15.4933 10.6005 15.2589 10.3661C15.0245 10.1317 14.7065 10 14.375 10ZM5.625 8.75C4.96196 8.75 4.32607 9.01339 3.85723 9.48223C3.38839 9.95107 3.125 10.587 3.125 11.25V17.5C3.125 18.163 3.38839 18.7989 3.85723 19.2678C4.32607 19.7366 4.96196 20 5.625 20H14.375C15.038 20 15.6739 19.7366 16.1428 19.2678C16.6116 18.7989 16.875 18.163 16.875 17.5V11.25C16.875 10.587 16.6116 9.95107 16.1428 9.48223C15.6739 9.01339 15.038 8.75 14.375 8.75H5.625ZM5.625 5C5.625 3.83968 6.08594 2.72688 6.90641 1.90641C7.72688 1.08594 8.83968 0.625 10 0.625C11.1603 0.625 12.2731 1.08594 13.0936 1.90641C13.9141 2.72688 14.375 3.83968 14.375 5V8.75H13.125V5C13.125 4.1712 12.7958 3.37634 12.2097 2.79029C11.6237 2.20424 10.8288 1.875 10 1.875C9.1712 1.875 8.37634 2.20424 7.79029 2.79029C7.20424 3.37634 6.875 4.1712 6.875 5V8.75H5.625V5Z">
+									</path>
+								</svg>
+							</div>
+							<input type="password" name="password" placeholder="Password"
+								class="form-control border-start-0 border-dark-3 ps-1" required="required">
+						</div>
+					</div>
+					<div class="col-sm-10 col-md-7 col-lg-3 mb-4 mb-lg-0" data-aos="fade-down" data-aos-delay="500">
+						<div class="input-group">
+							<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M10 20C10 20 17.5 12.8925 17.5 7.5C17.5 5.51088 16.7098 3.60322 15.3033 2.1967C13.8968 0.790176 11.9891 0 10 0C8.01088 0 6.10322 0.790176 4.6967 2.1967C3.29018 3.60322 2.5 5.51088 2.5 7.5C2.5 12.8925 10 20 10 20ZM10 11.25C10.9946 11.25 11.9484 10.8549 12.6517 10.1517C13.3549 9.44839 13.75 8.49456 13.75 7.5C13.75 6.50544 13.3549 5.55161 12.6517 4.84835C11.9484 4.14509 10.9946 3.75 10 3.75C9.00544 3.75 8.05161 4.14509 7.34835 4.84835C6.64509 5.55161 6.25 6.50544 6.25 7.5C6.25 8.49456 6.64509 9.44839 7.34835 10.1517C8.05161 10.8549 9.00544 11.25 10 11.25V11.25Z">
+									</path>
+								</svg>
+							</div>
+							<input type="text" name="country" placeholder="Country"
+								class="form-control border-start-0 border-dark-3 ps-1" required="required">
+						</div>
+					</div>
+					<div class="col-sm-10 col-md-7 col-lg-3" data-aos="fade-down" data-aos-delay="650">
+						<button class="btn btn-action-1 w-100">
+							Get started
+						</button>
+					</div>
 				</div>
-			</section>
-			<!-- Form 2 -->
-				<section class="bg-bg-3 py-10 py-lg-20 text-center">
-					<div class="container">
-						<div class="row justify-content-center">
-							<div class="col-xl-4 col-lg-5 col-md-7 col-sm-10">
-								<h1 class="mb-6" data-aos="fade-down" data-aos-delay="0">
-                    Sign In
-								</h1>
-								<form action="form-handler.php" method="post" enctype="multipart/form-data" class="js-ajax-form">
-									<!-- forms alerts -->
-										<div class="alert alert-action-8 fixed-top invisible fade js-form-result" data-result="success" role="alert">
-											<span class="js-form-alert-text" data-default-text="Thanks for your message!">
-												Thanks for your message!
-											</span>
-										</div>
-										<div class="alert alert-action-5 fixed-top invisible fade js-form-result" data-result="error" role="alert">
-											<span class="js-form-alert-text">
-												Error!
-											</span>
-										</div>
-										<!-- forms alerts end -->
-											<div class="input-group mb-6" data-aos="fade-down" data-aos-delay="150">
-												<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
-													<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
-														<path fill-rule="evenodd" clip-rule="evenodd" d="M17.5002 3.75H2.5002C2.16868 3.75 1.85074 3.8817 1.61632 4.11612C1.3819 4.35054 1.2502 4.66848 1.2502 5V5.27104L10.0002 10.5213L18.7502 5.27098V5C18.7502 4.66848 18.6185 4.35054 18.3841 4.11612C18.1497 3.8817 17.8317 3.75 17.5002 3.75ZM0.000203451 5.64224C-6.77314e-05 5.63161 -6.79025e-05 5.62098 0.000203451 5.61034V5C0.000203451 4.33696 0.263596 3.70107 0.732437 3.23223C1.20128 2.76339 1.83716 2.5 2.5002 2.5H17.5002C18.1632 2.5 18.7991 2.76339 19.268 3.23223C19.7368 3.70107 20.0002 4.33696 20.0002 5V5.61604V5.63397V15C20.0002 15.663 19.7368 16.2989 19.268 16.7678C18.7991 17.2366 18.1632 17.5 17.5002 17.5H2.5002C1.83716 17.5 1.20128 17.2366 0.732437 16.7678C0.263596 16.2989 0.000203451 15.663 0.000203451 15V5.64224ZM18.7502 13.9117V6.72895L12.6801 10.3708L18.7502 13.9117ZM18.7051 15.3329L11.5602 11.165L11.4569 11.1048L10.0002 11.9788L8.54329 11.1049L8.44016 11.165L1.29533 15.3328C1.35239 15.5394 1.46213 15.7297 1.61632 15.8839C1.85074 16.1183 2.16868 16.25 2.5002 16.25H17.5002C17.8317 16.25 18.1497 16.1183 18.3841 15.8839C18.5383 15.7297 18.648 15.5394 18.7051 15.3329ZM1.2502 13.9117V6.73013L7.31989 10.371L1.2502 13.9117Z">
-														</path>
-													</svg>
-												</div>
-												<input type="email" name="email" placeholder="Email address" class="form-control border-start-0 border-dark-3 ps-1" required="required">																						
-											</div>
-											<div class="input-group mb-6" data-aos="fade-down" data-aos-delay="250">
-												<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
-													<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
-														<path fill-rule="evenodd" clip-rule="evenodd" d="M14.375 10H5.625C5.29348 10 4.97554 10.1317 4.74112 10.3661C4.5067 10.6005 4.375 10.9185 4.375 11.25V17.5C4.375 17.8315 4.5067 18.1495 4.74112 18.3839C4.97554 18.6183 5.29348 18.75 5.625 18.75H14.375C14.7065 18.75 15.0245 18.6183 15.2589 18.3839C15.4933 18.1495 15.625 17.8315 15.625 17.5V11.25C15.625 10.9185 15.4933 10.6005 15.2589 10.3661C15.0245 10.1317 14.7065 10 14.375 10ZM5.625 8.75C4.96196 8.75 4.32607 9.01339 3.85723 9.48223C3.38839 9.95107 3.125 10.587 3.125 11.25V17.5C3.125 18.163 3.38839 18.7989 3.85723 19.2678C4.32607 19.7366 4.96196 20 5.625 20H14.375C15.038 20 15.6739 19.7366 16.1428 19.2678C16.6116 18.7989 16.875 18.163 16.875 17.5V11.25C16.875 10.587 16.6116 9.95107 16.1428 9.48223C15.6739 9.01339 15.038 8.75 14.375 8.75H5.625ZM5.625 5C5.625 3.83968 6.08594 2.72688 6.90641 1.90641C7.72688 1.08594 8.83968 0.625 10 0.625C11.1603 0.625 12.2731 1.08594 13.0936 1.90641C13.9141 2.72688 14.375 3.83968 14.375 5V8.75H13.125V5C13.125 4.1712 12.7958 3.37634 12.2097 2.79029C11.6237 2.20424 10.8288 1.875 10 1.875C9.1712 1.875 8.37634 2.20424 7.79029 2.79029C7.20424 3.37634 6.875 4.1712 6.875 5V8.75H5.625V5Z">
-														</path>
-													</svg>
-												</div>
-												<input type="password" name="password" placeholder="Password" class="form-control border-start-0 border-dark-3 ps-1" required="required">																						
-											</div>
-											<button class="btn btn-action-1 w-100 mb-6" data-aos="fade-down" data-aos-delay="400">
+			</form>
+			<p class="mb-0" data-aos="fade-down" data-aos-delay="750">
+				Out with the old, in with the new. The new is quicker, and it’s easier too.
+			</p>
+		</div>
+	</section>
+	<!-- Form 4 -->
+	<section class="bg-bg-3 py-10 py-lg-20 text-center">
+		<div class="container">
+			<h2 class="display-5 mb-6" data-aos="fade-down" data-aos-delay="0">
+				Get started
+			</h2>
+			<div class="row flex-column align-items-center">
+				<div class="col-xl-4 col-lg-5 col-md-6 col-sm-9">
+					<p class="fs-2 mb-10" data-aos="fade-down" data-aos-delay="150">
+						Start growing in half the time with an
+						<span class="text-nowrap">
+							all-in-one
+						</span>
+						website builder.
+					</p>
+					<a href="#" class="btn btn-action-1 w-100 mb-6 position-relative ps-12" data-aos="fade-down"
+						data-aos-delay="250">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+							class="fill-light-1 position-absolute start-0 top-50 translate-middle-y ms-4">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z">
+							</path>
+						</svg>
+						<span>
+							Sign up with Facebook
+						</span>
+					</a>
+					<a href="#" class="btn btn-action-1 w-100 mb-6 position-relative ps-12" data-aos="fade-down"
+						data-aos-delay="400">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+							class="fill-light-1 position-absolute start-0 top-50 translate-middle-y ms-4">
+							<path
+								d="M21.4555 10.154C21.5785 10.813 21.6455 11.502 21.6455 12.221C21.6455 17.845 17.8815 21.844 12.1965 21.844C10.9037 21.8444 9.62344 21.59 8.42894 21.0955C7.23443 20.6009 6.14908 19.8758 5.2349 18.9616C4.32072 18.0475 3.59563 16.9621 3.10107 15.7676C2.6065 14.5731 2.35215 13.2929 2.35254 12C2.35215 10.7072 2.6065 9.42691 3.10107 8.2324C3.59563 7.0379 4.32072 5.95255 5.2349 5.03837C6.14908 4.12419 7.23443 3.3991 8.42894 2.90453C9.62344 2.40997 10.9037 2.15561 12.1965 2.15601C14.8545 2.15601 17.0755 3.13401 18.7795 4.72201L16.0045 7.49701V7.49001C14.9715 6.50601 13.6605 6.00101 12.1965 6.00101C8.94854 6.00101 6.30854 8.74501 6.30854 11.994C6.30854 15.242 8.94854 17.992 12.1965 17.992C15.1435 17.992 17.1495 16.307 17.5615 13.993H12.1965V10.154H21.4565H21.4555Z">
+							</path>
+						</svg>
+						<span>
+							Sign up with Google
+						</span>
+					</a>
+					<a href="#" class="btn btn-action-1 w-100 position-relative ps-12" data-aos="fade-down"
+						data-aos-delay="500">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+							class="fill-light-1 position-absolute start-0 top-50 translate-middle-y ms-4">
+							<path
+								d="M23.6425 4.93695C22.8075 5.30695 21.9105 5.55696 20.9675 5.66996C21.9405 5.08775 22.6685 4.17142 23.0155 3.09195C22.1014 3.63494 21.1009 4.01715 20.0575 4.22196C19.3559 3.47282 18.4266 2.97628 17.4138 2.80943C16.4011 2.64258 15.3616 2.81475 14.4568 3.29921C13.5519 3.78367 12.8323 4.55332 12.4097 5.48866C11.9871 6.424 11.8851 7.4727 12.1195 8.47195C10.2672 8.37895 8.45515 7.8975 6.80095 7.05886C5.14674 6.22022 3.68736 5.04312 2.51752 3.60396C2.11752 4.29396 1.88752 5.09396 1.88752 5.94596C1.88708 6.71295 2.07596 7.4682 2.4374 8.14469C2.79885 8.82118 3.32168 9.39799 3.95952 9.82396C3.2198 9.80042 2.4964 9.60054 1.84952 9.24095V9.30095C1.84945 10.3767 2.22156 11.4193 2.90271 12.252C3.58386 13.0846 4.53209 13.6559 5.58652 13.869C4.90031 14.0547 4.18086 14.082 3.48252 13.949C3.78002 14.8746 4.35952 15.684 5.13989 16.2639C5.92026 16.8438 6.86244 17.1651 7.83452 17.183C6.18436 18.4784 4.14641 19.181 2.04852 19.178C1.6769 19.1781 1.3056 19.1564 0.936523 19.113C3.066 20.4821 5.54486 21.2088 8.07652 21.206C16.6465 21.206 21.3315 14.108 21.3315 7.95195C21.3315 7.75196 21.3265 7.54995 21.3175 7.34995C22.2288 6.69093 23.0154 5.87485 23.6405 4.93995L23.6425 4.93695Z">
+							</path>
+						</svg>
+						<span>
+							Sign up with Twitter
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Form 5 -->
+	<section class="bg-bg-3 py-10 py-lg-20">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-4 col-lg-5 col-md-7 col-sm-10">
+					<div class="row justify-content-between align-items-center mb-6" data-aos="fade-down"
+						data-aos-delay="0">
+						<div class="col">
+							<h1>
+								Recovery
+							</h1>
+						</div>
+						<div class="col-auto">
+							<a href="#" class="fs-4 fw-bold">
+								Sign In
+							</a>
+						</div>
+					</div>
+					<form action="form-handler.php" method="post" enctype="multipart/form-data" class="js-ajax-form">
+						<!-- forms alerts -->
+						<div class="alert alert-action-8 fixed-top invisible fade js-form-result" data-result="success"
+							role="alert">
+							<span class="js-form-alert-text" data-default-text="Thanks for your message!">
+								Thanks for your message!
+							</span>
+						</div>
+						<div class="alert alert-action-5 fixed-top invisible fade js-form-result" data-result="error"
+							role="alert">
+							<span class="js-form-alert-text">
+								Error!
+							</span>
+						</div>
+						<!-- forms alerts end -->
+						<div class="input-group mb-6" data-aos="fade-down" data-aos-delay="250">
+							<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M17.5002 3.75H2.5002C2.16868 3.75 1.85074 3.8817 1.61632 4.11612C1.3819 4.35054 1.2502 4.66848 1.2502 5V5.27104L10.0002 10.5213L18.7502 5.27098V5C18.7502 4.66848 18.6185 4.35054 18.3841 4.11612C18.1497 3.8817 17.8317 3.75 17.5002 3.75ZM0.000203451 5.64224C-6.77314e-05 5.63161 -6.79025e-05 5.62098 0.000203451 5.61034V5C0.000203451 4.33696 0.263596 3.70107 0.732437 3.23223C1.20128 2.76339 1.83716 2.5 2.5002 2.5H17.5002C18.1632 2.5 18.7991 2.76339 19.268 3.23223C19.7368 3.70107 20.0002 4.33696 20.0002 5V5.61604V5.63397V15C20.0002 15.663 19.7368 16.2989 19.268 16.7678C18.7991 17.2366 18.1632 17.5 17.5002 17.5H2.5002C1.83716 17.5 1.20128 17.2366 0.732437 16.7678C0.263596 16.2989 0.000203451 15.663 0.000203451 15V5.64224ZM18.7502 13.9117V6.72895L12.6801 10.3708L18.7502 13.9117ZM18.7051 15.3329L11.5602 11.165L11.4569 11.1048L10.0002 11.9788L8.54329 11.1049L8.44016 11.165L1.29533 15.3328C1.35239 15.5394 1.46213 15.7297 1.61632 15.8839C1.85074 16.1183 2.16868 16.25 2.5002 16.25H17.5002C17.8317 16.25 18.1497 16.1183 18.3841 15.8839C18.5383 15.7297 18.648 15.5394 18.7051 15.3329ZM1.2502 13.9117V6.73013L7.31989 10.371L1.2502 13.9117Z">
+									</path>
+								</svg>
+							</div>
+							<input type="email" name="email" placeholder="Email address"
+								class="form-control border-start-0 border-dark-3 ps-1" required="required">
+						</div>
+						<button class="btn btn-action-1 w-100" data-aos="fade-down" data-aos-delay="400">
+							Send
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Form 6 -->
+	<section class="bg-bg-3 py-10 py-lg-20 text-center">
+		<div class="container">
+			<div
+				class="row align-items-center align-items-md-start align-items-lg-center flex-column-reverse flex-md-row">
+				<div class="col-xl-1">
+				</div>
+				<div class="col-xl-4 col-lg-5 col-md-5 col-sm-10">
+					<h1 class="mb-6" data-aos="fade-down" data-aos-delay="0">
 						Sign In
-											</button>
-											<div data-aos="fade-down" data-aos-delay="250">
-												<p class="d-inline-block text-dark-3 mb-6">
-		Don’t have an account?
-												</p>
-												<a href="#" class="ms-1">
-	Log In
-												</a>
-											</div>
-											<div class="w-50 border-bottom border-bg-2 mx-auto mb-6" data-aos="fade-down" data-aos-delay="400">
-											</div>
-											<p class="mb-6">
-		Sign In via socials
-											</p>
-											<div class="row g-0">
-												<div class="col-4 pe-2">
-													<a href="#" class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center">
-														<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-1">
-															<path fill-rule="evenodd" clip-rule="evenodd" d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z">
-															</path>
-														</svg>
-													</a>
-												</div>
-												<div class="col-4 px-1">
-													<a href="#" class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center">
-														<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-1">
-															<path d="M19.4565 8.15425C19.5795 8.81325 19.6465 9.50225 19.6465 10.2213C19.6465 15.8453 15.8825 19.8442 10.1975 19.8442C8.90467 19.8446 7.62442 19.5903 6.42991 19.0957C5.23541 18.6012 4.15006 17.8761 3.23588 16.9619C2.3217 16.0477 1.59661 14.9624 1.10204 13.7679C0.607475 12.5733 0.353122 11.2931 0.353516 10.0003C0.353122 8.70741 0.607475 7.42716 1.10204 6.23265C1.59661 5.03814 2.3217 3.95279 3.23588 3.03861C4.15006 2.12443 5.23541 1.39935 6.42991 0.904778C7.62442 0.41021 8.90467 0.155856 10.1975 0.15625C12.8555 0.15625 15.0765 1.13425 16.7805 2.72225L14.0055 5.49725V5.49025C12.9725 4.50625 11.6615 4.00125 10.1975 4.00125C6.94952 4.00125 4.30952 6.74525 4.30952 9.99425C4.30952 13.2423 6.94952 15.9923 10.1975 15.9923C13.1445 15.9923 15.1505 14.3073 15.5625 11.9933H10.1975V8.15425H19.4575H19.4565Z">
-															</path>
-														</svg>
-													</a>
-												</div>
-												<div class="col-4 ps-2">
-													<a href="#" class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center">
-														<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-1">
-															<path d="M23.6435 2.93757C22.8085 3.30757 21.9115 3.55757 20.9685 3.67057C21.9415 3.08836 22.6694 2.17203 23.0165 1.09257C22.1023 1.63555 21.1018 2.01776 20.0585 2.22257C19.3569 1.47343 18.4276 0.976891 17.4148 0.810039C16.4021 0.643187 15.3626 0.815357 14.4577 1.29982C13.5529 1.78428 12.8333 2.55393 12.4107 3.48927C11.988 4.42461 11.886 5.47332 12.1205 6.47257C10.2682 6.37956 8.45613 5.89811 6.80192 5.05947C5.14772 4.22083 3.68834 3.04373 2.5185 1.60457C2.1185 2.29457 1.8885 3.09457 1.8885 3.94657C1.88805 4.71356 2.07693 5.46881 2.43838 6.1453C2.79982 6.82179 3.32266 7.3986 3.9605 7.82457C3.22078 7.80103 2.49737 7.60115 1.8505 7.24157V7.30156C1.85043 8.37731 2.22253 9.41994 2.90368 10.2526C3.58483 11.0852 4.53307 11.6565 5.5875 11.8696C4.90128 12.0553 4.18184 12.0826 3.4835 11.9496C3.781 12.8752 4.3605 13.6846 5.14087 14.2645C5.92124 14.8444 6.86342 15.1657 7.8355 15.1836C6.18533 16.479 4.14739 17.1817 2.0495 17.1786C1.67788 17.1787 1.30658 17.157 0.9375 17.1136C3.06698 18.4827 5.54584 19.2094 8.0775 19.2066C16.6475 19.2066 21.3325 12.1086 21.3325 5.95257C21.3325 5.75257 21.3275 5.55056 21.3185 5.35056C22.2298 4.69154 23.0164 3.87546 23.6415 2.94057L23.6435 2.93757Z">
-															</path>
-														</svg>
-													</a>
-												</div>
-											</div>
-										</form>
-									</div>
+					</h1>
+					<form action="form-handler.php" method="post" enctype="multipart/form-data" class="js-ajax-form">
+						<!-- forms alerts -->
+						<div class="alert alert-action-8 fixed-top invisible fade js-form-result" data-result="success"
+							role="alert">
+							<span class="js-form-alert-text" data-default-text="Thanks for your message!">
+								Thanks for your message!
+							</span>
+						</div>
+						<div class="alert alert-action-5 fixed-top invisible fade js-form-result" data-result="error"
+							role="alert">
+							<span class="js-form-alert-text">
+								Error!
+							</span>
+						</div>
+						<!-- forms alerts end -->
+						<div class="input-group mb-6" data-aos="fade-down" data-aos-delay="150">
+							<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M17.5002 3.75H2.5002C2.16868 3.75 1.85074 3.8817 1.61632 4.11612C1.3819 4.35054 1.2502 4.66848 1.2502 5V5.27104L10.0002 10.5213L18.7502 5.27098V5C18.7502 4.66848 18.6185 4.35054 18.3841 4.11612C18.1497 3.8817 17.8317 3.75 17.5002 3.75ZM0.000203451 5.64224C-6.77314e-05 5.63161 -6.79025e-05 5.62098 0.000203451 5.61034V5C0.000203451 4.33696 0.263596 3.70107 0.732437 3.23223C1.20128 2.76339 1.83716 2.5 2.5002 2.5H17.5002C18.1632 2.5 18.7991 2.76339 19.268 3.23223C19.7368 3.70107 20.0002 4.33696 20.0002 5V5.61604V5.63397V15C20.0002 15.663 19.7368 16.2989 19.268 16.7678C18.7991 17.2366 18.1632 17.5 17.5002 17.5H2.5002C1.83716 17.5 1.20128 17.2366 0.732437 16.7678C0.263596 16.2989 0.000203451 15.663 0.000203451 15V5.64224ZM18.7502 13.9117V6.72895L12.6801 10.3708L18.7502 13.9117ZM18.7051 15.3329L11.5602 11.165L11.4569 11.1048L10.0002 11.9788L8.54329 11.1049L8.44016 11.165L1.29533 15.3328C1.35239 15.5394 1.46213 15.7297 1.61632 15.8839C1.85074 16.1183 2.16868 16.25 2.5002 16.25H17.5002C17.8317 16.25 18.1497 16.1183 18.3841 15.8839C18.5383 15.7297 18.648 15.5394 18.7051 15.3329ZM1.2502 13.9117V6.73013L7.31989 10.371L1.2502 13.9117Z">
+									</path>
+								</svg>
+							</div>
+							<input type="email" name="email" placeholder="Email address"
+								class="form-control border-start-0 border-dark-3 ps-1" required="required">
+						</div>
+						<div class="input-group mb-6" data-aos="fade-down" data-aos-delay="250">
+							<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M14.375 10H5.625C5.29348 10 4.97554 10.1317 4.74112 10.3661C4.5067 10.6005 4.375 10.9185 4.375 11.25V17.5C4.375 17.8315 4.5067 18.1495 4.74112 18.3839C4.97554 18.6183 5.29348 18.75 5.625 18.75H14.375C14.7065 18.75 15.0245 18.6183 15.2589 18.3839C15.4933 18.1495 15.625 17.8315 15.625 17.5V11.25C15.625 10.9185 15.4933 10.6005 15.2589 10.3661C15.0245 10.1317 14.7065 10 14.375 10ZM5.625 8.75C4.96196 8.75 4.32607 9.01339 3.85723 9.48223C3.38839 9.95107 3.125 10.587 3.125 11.25V17.5C3.125 18.163 3.38839 18.7989 3.85723 19.2678C4.32607 19.7366 4.96196 20 5.625 20H14.375C15.038 20 15.6739 19.7366 16.1428 19.2678C16.6116 18.7989 16.875 18.163 16.875 17.5V11.25C16.875 10.587 16.6116 9.95107 16.1428 9.48223C15.6739 9.01339 15.038 8.75 14.375 8.75H5.625ZM5.625 5C5.625 3.83968 6.08594 2.72688 6.90641 1.90641C7.72688 1.08594 8.83968 0.625 10 0.625C11.1603 0.625 12.2731 1.08594 13.0936 1.90641C13.9141 2.72688 14.375 3.83968 14.375 5V8.75H13.125V5C13.125 4.1712 12.7958 3.37634 12.2097 2.79029C11.6237 2.20424 10.8288 1.875 10 1.875C9.1712 1.875 8.37634 2.20424 7.79029 2.79029C7.20424 3.37634 6.875 4.1712 6.875 5V8.75H5.625V5Z">
+									</path>
+								</svg>
+							</div>
+							<input type="password" name="password" placeholder="Password"
+								class="form-control border-start-0 border-dark-3 ps-1" required="required">
+						</div>
+						<button class="btn btn-action-1 w-100 mb-6" data-aos="fade-down" data-aos-delay="400">
+							Sign In
+						</button>
+						<div data-aos="fade-down" data-aos-delay="250">
+							<p class="d-inline-block text-dark-3 mb-6">
+								Don’t have an account?
+							</p>
+							<a href="#" class="ms-1">
+								Log In
+							</a>
+						</div>
+						<div class="w-50 border-bottom border-bg-2 mx-auto mb-6" data-aos="fade-down"
+							data-aos-delay="400">
+						</div>
+						<p class="mb-6">
+							Sign In via socials
+						</p>
+						<div class="row g-0">
+							<div class="col-4 pe-2">
+								<a href="#"
+									class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg" class="fill-dark-1">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z">
+										</path>
+									</svg>
+								</a>
+							</div>
+							<div class="col-4 px-1">
+								<a href="#"
+									class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg" class="fill-dark-1">
+										<path
+											d="M19.4565 8.15425C19.5795 8.81325 19.6465 9.50225 19.6465 10.2213C19.6465 15.8453 15.8825 19.8442 10.1975 19.8442C8.90467 19.8446 7.62442 19.5903 6.42991 19.0957C5.23541 18.6012 4.15006 17.8761 3.23588 16.9619C2.3217 16.0477 1.59661 14.9624 1.10204 13.7679C0.607475 12.5733 0.353122 11.2931 0.353516 10.0003C0.353122 8.70741 0.607475 7.42716 1.10204 6.23265C1.59661 5.03814 2.3217 3.95279 3.23588 3.03861C4.15006 2.12443 5.23541 1.39935 6.42991 0.904778C7.62442 0.41021 8.90467 0.155856 10.1975 0.15625C12.8555 0.15625 15.0765 1.13425 16.7805 2.72225L14.0055 5.49725V5.49025C12.9725 4.50625 11.6615 4.00125 10.1975 4.00125C6.94952 4.00125 4.30952 6.74525 4.30952 9.99425C4.30952 13.2423 6.94952 15.9923 10.1975 15.9923C13.1445 15.9923 15.1505 14.3073 15.5625 11.9933H10.1975V8.15425H19.4575H19.4565Z">
+										</path>
+									</svg>
+								</a>
+							</div>
+							<div class="col-4 ps-2">
+								<a href="#"
+									class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center">
+									<svg width="24" height="20" viewBox="0 0 24 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg" class="fill-dark-1">
+										<path
+											d="M23.6435 2.93757C22.8085 3.30757 21.9115 3.55757 20.9685 3.67057C21.9415 3.08836 22.6694 2.17203 23.0165 1.09257C22.1023 1.63555 21.1018 2.01776 20.0585 2.22257C19.3569 1.47343 18.4276 0.976891 17.4148 0.810039C16.4021 0.643187 15.3626 0.815357 14.4577 1.29982C13.5529 1.78428 12.8333 2.55393 12.4107 3.48927C11.988 4.42461 11.886 5.47332 12.1205 6.47257C10.2682 6.37956 8.45613 5.89811 6.80192 5.05947C5.14772 4.22083 3.68834 3.04373 2.5185 1.60457C2.1185 2.29457 1.8885 3.09457 1.8885 3.94657C1.88805 4.71356 2.07693 5.46881 2.43838 6.1453C2.79982 6.82179 3.32266 7.3986 3.9605 7.82457C3.22078 7.80103 2.49737 7.60115 1.8505 7.24157V7.30156C1.85043 8.37731 2.22253 9.41994 2.90368 10.2526C3.58483 11.0852 4.53307 11.6565 5.5875 11.8696C4.90128 12.0553 4.18184 12.0826 3.4835 11.9496C3.781 12.8752 4.3605 13.6846 5.14087 14.2645C5.92124 14.8444 6.86342 15.1657 7.8355 15.1836C6.18533 16.479 4.14739 17.1817 2.0495 17.1786C1.67788 17.1787 1.30658 17.157 0.9375 17.1136C3.06698 18.4827 5.54584 19.2094 8.0775 19.2066C16.6475 19.2066 21.3325 12.1086 21.3325 5.95257C21.3325 5.75257 21.3275 5.55056 21.3185 5.35056C22.2298 4.69154 23.0164 3.87546 23.6415 2.94057L23.6435 2.93757Z">
+										</path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-6">
+					<img src="i/form-6.png" srcset="i/form-6@2x.png 2x" alt="" class="img-fluid mb-12 mb-lg-0"
+						data-aos="fade-down" data-aos-delay="0">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Form 7 -->
+	<section class="bg-bg-3 py-10 py-lg-20 text-center">
+		<div class="container">
+			<div class="row align-items-lg-center justify-content-center">
+				<div class="col-6">
+					<img src="i/form-7.png" srcset="i/form-7@2x.png 2x" alt="" class="img-fluid mb-12 mb-lg-0"
+						data-aos="fade-down" data-aos-delay="0">
+				</div>
+				<div class="col-md-1">
+				</div>
+				<div class="col-xl-4 col-lg-5 col-md-5 col-sm-10">
+					<h1 class="mb-6" data-aos="fade-down" data-aos-delay="0">
+						Sign In
+					</h1>
+					<form action="form-handler.php" method="post" enctype="multipart/form-data" class="js-ajax-form">
+						<!-- forms alerts -->
+						<div class="alert alert-action-8 fixed-top invisible fade js-form-result" data-result="success"
+							role="alert">
+							<span class="js-form-alert-text" data-default-text="Thanks for your message!">
+								Thanks for your message!
+							</span>
+						</div>
+						<div class="alert alert-action-5 fixed-top invisible fade js-form-result" data-result="error"
+							role="alert">
+							<span class="js-form-alert-text">
+								Error!
+							</span>
+						</div>
+						<!-- forms alerts end -->
+						<div class="input-group mb-6" data-aos="fade-down" data-aos-delay="150">
+							<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M17.5002 3.75H2.5002C2.16868 3.75 1.85074 3.8817 1.61632 4.11612C1.3819 4.35054 1.2502 4.66848 1.2502 5V5.27104L10.0002 10.5213L18.7502 5.27098V5C18.7502 4.66848 18.6185 4.35054 18.3841 4.11612C18.1497 3.8817 17.8317 3.75 17.5002 3.75ZM0.000203451 5.64224C-6.77314e-05 5.63161 -6.79025e-05 5.62098 0.000203451 5.61034V5C0.000203451 4.33696 0.263596 3.70107 0.732437 3.23223C1.20128 2.76339 1.83716 2.5 2.5002 2.5H17.5002C18.1632 2.5 18.7991 2.76339 19.268 3.23223C19.7368 3.70107 20.0002 4.33696 20.0002 5V5.61604V5.63397V15C20.0002 15.663 19.7368 16.2989 19.268 16.7678C18.7991 17.2366 18.1632 17.5 17.5002 17.5H2.5002C1.83716 17.5 1.20128 17.2366 0.732437 16.7678C0.263596 16.2989 0.000203451 15.663 0.000203451 15V5.64224ZM18.7502 13.9117V6.72895L12.6801 10.3708L18.7502 13.9117ZM18.7051 15.3329L11.5602 11.165L11.4569 11.1048L10.0002 11.9788L8.54329 11.1049L8.44016 11.165L1.29533 15.3328C1.35239 15.5394 1.46213 15.7297 1.61632 15.8839C1.85074 16.1183 2.16868 16.25 2.5002 16.25H17.5002C17.8317 16.25 18.1497 16.1183 18.3841 15.8839C18.5383 15.7297 18.648 15.5394 18.7051 15.3329ZM1.2502 13.9117V6.73013L7.31989 10.371L1.2502 13.9117Z">
+									</path>
+								</svg>
+							</div>
+							<input type="email" name="email" placeholder="Email address"
+								class="form-control border-start-0 border-dark-3 ps-1" required="required">
+						</div>
+						<div class="input-group mb-6" data-aos="fade-down" data-aos-delay="250">
+							<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M14.375 10H5.625C5.29348 10 4.97554 10.1317 4.74112 10.3661C4.5067 10.6005 4.375 10.9185 4.375 11.25V17.5C4.375 17.8315 4.5067 18.1495 4.74112 18.3839C4.97554 18.6183 5.29348 18.75 5.625 18.75H14.375C14.7065 18.75 15.0245 18.6183 15.2589 18.3839C15.4933 18.1495 15.625 17.8315 15.625 17.5V11.25C15.625 10.9185 15.4933 10.6005 15.2589 10.3661C15.0245 10.1317 14.7065 10 14.375 10ZM5.625 8.75C4.96196 8.75 4.32607 9.01339 3.85723 9.48223C3.38839 9.95107 3.125 10.587 3.125 11.25V17.5C3.125 18.163 3.38839 18.7989 3.85723 19.2678C4.32607 19.7366 4.96196 20 5.625 20H14.375C15.038 20 15.6739 19.7366 16.1428 19.2678C16.6116 18.7989 16.875 18.163 16.875 17.5V11.25C16.875 10.587 16.6116 9.95107 16.1428 9.48223C15.6739 9.01339 15.038 8.75 14.375 8.75H5.625ZM5.625 5C5.625 3.83968 6.08594 2.72688 6.90641 1.90641C7.72688 1.08594 8.83968 0.625 10 0.625C11.1603 0.625 12.2731 1.08594 13.0936 1.90641C13.9141 2.72688 14.375 3.83968 14.375 5V8.75H13.125V5C13.125 4.1712 12.7958 3.37634 12.2097 2.79029C11.6237 2.20424 10.8288 1.875 10 1.875C9.1712 1.875 8.37634 2.20424 7.79029 2.79029C7.20424 3.37634 6.875 4.1712 6.875 5V8.75H5.625V5Z">
+									</path>
+								</svg>
+							</div>
+							<input type="password" name="password" placeholder="Password"
+								class="form-control border-start-0 border-dark-3 ps-1" required="required">
+						</div>
+						<button class="btn btn-action-1 w-100 mb-6" data-aos="fade-down" data-aos-delay="400">
+							Sign In
+						</button>
+						<div data-aos="fade-down" data-aos-delay="250">
+							<p class="d-inline-block text-dark-3 mb-6">
+								Don’t have an account?
+							</p>
+							<a href="#" class="ms-1">
+								Log In
+							</a>
+						</div>
+						<div class="w-50 border-bottom border-bg-2 mx-auto mb-6" data-aos="fade-down"
+							data-aos-delay="400">
+						</div>
+						<p class="mb-6">
+							Sign In via socials
+						</p>
+						<div class="row g-0">
+							<div class="col-4 pe-2">
+								<a href="#"
+									class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg" class="fill-dark-1">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z">
+										</path>
+									</svg>
+								</a>
+							</div>
+							<div class="col-4 px-1">
+								<a href="#"
+									class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg" class="fill-dark-1">
+										<path
+											d="M19.4565 8.15425C19.5795 8.81325 19.6465 9.50225 19.6465 10.2213C19.6465 15.8453 15.8825 19.8442 10.1975 19.8442C8.90467 19.8446 7.62442 19.5903 6.42991 19.0957C5.23541 18.6012 4.15006 17.8761 3.23588 16.9619C2.3217 16.0477 1.59661 14.9624 1.10204 13.7679C0.607475 12.5733 0.353122 11.2931 0.353516 10.0003C0.353122 8.70741 0.607475 7.42716 1.10204 6.23265C1.59661 5.03814 2.3217 3.95279 3.23588 3.03861C4.15006 2.12443 5.23541 1.39935 6.42991 0.904778C7.62442 0.41021 8.90467 0.155856 10.1975 0.15625C12.8555 0.15625 15.0765 1.13425 16.7805 2.72225L14.0055 5.49725V5.49025C12.9725 4.50625 11.6615 4.00125 10.1975 4.00125C6.94952 4.00125 4.30952 6.74525 4.30952 9.99425C4.30952 13.2423 6.94952 15.9923 10.1975 15.9923C13.1445 15.9923 15.1505 14.3073 15.5625 11.9933H10.1975V8.15425H19.4575H19.4565Z">
+										</path>
+									</svg>
+								</a>
+							</div>
+							<div class="col-4 ps-2">
+								<a href="#"
+									class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center">
+									<svg width="24" height="20" viewBox="0 0 24 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg" class="fill-dark-1">
+										<path
+											d="M23.6435 2.93757C22.8085 3.30757 21.9115 3.55757 20.9685 3.67057C21.9415 3.08836 22.6694 2.17203 23.0165 1.09257C22.1023 1.63555 21.1018 2.01776 20.0585 2.22257C19.3569 1.47343 18.4276 0.976891 17.4148 0.810039C16.4021 0.643187 15.3626 0.815357 14.4577 1.29982C13.5529 1.78428 12.8333 2.55393 12.4107 3.48927C11.988 4.42461 11.886 5.47332 12.1205 6.47257C10.2682 6.37956 8.45613 5.89811 6.80192 5.05947C5.14772 4.22083 3.68834 3.04373 2.5185 1.60457C2.1185 2.29457 1.8885 3.09457 1.8885 3.94657C1.88805 4.71356 2.07693 5.46881 2.43838 6.1453C2.79982 6.82179 3.32266 7.3986 3.9605 7.82457C3.22078 7.80103 2.49737 7.60115 1.8505 7.24157V7.30156C1.85043 8.37731 2.22253 9.41994 2.90368 10.2526C3.58483 11.0852 4.53307 11.6565 5.5875 11.8696C4.90128 12.0553 4.18184 12.0826 3.4835 11.9496C3.781 12.8752 4.3605 13.6846 5.14087 14.2645C5.92124 14.8444 6.86342 15.1657 7.8355 15.1836C6.18533 16.479 4.14739 17.1817 2.0495 17.1786C1.67788 17.1787 1.30658 17.157 0.9375 17.1136C3.06698 18.4827 5.54584 19.2094 8.0775 19.2066C16.6475 19.2066 21.3325 12.1086 21.3325 5.95257C21.3325 5.75257 21.3275 5.55056 21.3185 5.35056C22.2298 4.69154 23.0164 3.87546 23.6415 2.94057L23.6435 2.93757Z">
+										</path>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-xl-1">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Form 8 -->
+	<section class="bg-bg-3 pt-10 pt-md-0">
+		<div class="container">
+			<div class="row justify-content-between flex-md-row-reverse">
+				<div class="col-6">
+					<div class="ms-8 ms-lg-0 d-none d-md-block h-100 bg-size-fit-y bg-position-center"
+						data-bg-src="i/form-8.png" data-bg-src-2x="i/form-8@2x.png" data-aos="fade-down"
+						data-aos-delay="500">
+					</div>
+					<img src="i/form-8.png" srcset="i/form-8@2x.png 2x" alt="" class="d-md-none img-fluid"
+						data-aos="fade-down" data-aos-delay="0">
+				</div>
+				<div class="py-10 py-lg-20 col-xl-4 col-lg-5 col-md-6 col-sm-9">
+					<h1 class="mb-4" data-aos="fade-down" data-aos-delay="0">
+						Startup Framework
+					</h1>
+					<p class="mb-8" data-aos="fade-down" data-aos-delay="150">
+						Out with the old, in with the new. The new is quicker, and it’s easier too.
+					</p>
+					<form action="form-handler.php" method="post" enctype="multipart/form-data" class="js-ajax-form">
+						<!-- forms alerts -->
+						<div class="alert alert-action-8 fixed-top invisible fade js-form-result" data-result="success"
+							role="alert">
+							<span class="js-form-alert-text" data-default-text="Thanks for your message!">
+								Thanks for your message!
+							</span>
+						</div>
+						<div class="alert alert-action-5 fixed-top invisible fade js-form-result" data-result="error"
+							role="alert">
+							<span class="js-form-alert-text">
+								Error!
+							</span>
+						</div>
+						<!-- forms alerts end -->
+						<div class="row justify-content-center">
+							<div class="mb-6 col-6" data-aos="fade-down" data-aos-delay="150">
+								<div class="input-group">
+									<input type="text" name="firstname" placeholder="First name"
+										class="form-control border border-dark-3" required="required">
 								</div>
 							</div>
-						</section>
-						<!-- Form 3 -->
-							<section class="bg-bg-3 py-10 py-lg-20 text-center">
-								<div class="container">
-									<div class="row justify-content-center text-md-center">
-										<div class="col-lg-10 col-xl-8">
-											<h2 class="display-5 mb-6" data-aos="fade-down" data-aos-delay="0">
-					Better landing for your startup
-											</h2>
-										</div>
-										<div class="col-md-9 col-lg-7 col-xl-6 col-xxl-5 mb-10">
-											<p class="fs-2 mb-0" data-aos="fade-down" data-aos-delay="150">
-					Start growing in half the time with an 
-												<span class="text-nowrap">
-all-in-one
-												</span>
-website builder - no more long hours spent on the boring stuff! 
-											</p>
-										</div>
-									</div>
-									<form action="form-handler.php" method="post" enctype="multipart/form-data" class="js-ajax-form mb-10">
-										<!-- forms alerts -->
-											<div class="alert alert-action-8 fixed-top invisible fade js-form-result" data-result="success" role="alert">
-												<span class="js-form-alert-text" data-default-text="Thanks for your message!">
-													Thanks for your message!
-												</span>
-											</div>
-											<div class="alert alert-action-5 fixed-top invisible fade js-form-result" data-result="error" role="alert">
-												<span class="js-form-alert-text">
-													Error!
-												</span>
-											</div>
-											<!-- forms alerts end -->
-												<div class="row justify-content-center">
-													<div class="col-sm-10 col-md-7 col-lg-3 mb-4 mb-lg-0" data-aos="fade-down" data-aos-delay="250">
-														<div class="input-group">
-															<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
-																<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
-																	<path fill-rule="evenodd" clip-rule="evenodd" d="M16.75 17.5C16.75 17.5 18 17.5 18 16.25C18 15 16.75 11.25 10.5 11.25C4.25 11.25 3 15 3 16.25C3 17.5 4.25 17.5 4.25 17.5H16.75ZM4.25625 16.32V16.3175V16.32ZM4.2775 16.25H16.7225C16.7284 16.2493 16.7342 16.2485 16.74 16.2475L16.75 16.245C16.7487 15.9375 16.5575 15.0125 15.71 14.165C14.895 13.35 13.3613 12.5 10.5 12.5C7.6375 12.5 6.105 13.35 5.29 14.165C4.4425 15.0125 4.2525 15.9375 4.25 16.245C4.25915 16.2468 4.26832 16.2484 4.2775 16.25V16.25ZM16.745 16.32V16.3175V16.32ZM10.5 8.75C11.163 8.75 11.7989 8.48661 12.2678 8.01777C12.7366 7.54893 13 6.91304 13 6.25C13 5.58696 12.7366 4.95107 12.2678 4.48223C11.7989 4.01339 11.163 3.75 10.5 3.75C9.83696 3.75 9.20107 4.01339 8.73223 4.48223C8.26339 4.95107 8 5.58696 8 6.25C8 6.91304 8.26339 7.54893 8.73223 8.01777C9.20107 8.48661 9.83696 8.75 10.5 8.75V8.75ZM14.25 6.25C14.25 7.24456 13.8549 8.19839 13.1517 8.90165C12.4484 9.60491 11.4946 10 10.5 10C9.50544 10 8.55161 9.60491 7.84835 8.90165C7.14509 8.19839 6.75 7.24456 6.75 6.25C6.75 5.25544 7.14509 4.30161 7.84835 3.59835C8.55161 2.89509 9.50544 2.5 10.5 2.5C11.4946 2.5 12.4484 2.89509 13.1517 3.59835C13.8549 4.30161 14.25 5.25544 14.25 6.25V6.25Z">
-																	</path>
-																</svg>
-															</div>
-															<input type="text" name="name" placeholder="Name" class="form-control border-start-0 border-dark-3 ps-1" required="required">																						
-														</div>
-													</div>
-													<div class="col-sm-10 col-md-7 col-lg-3 mb-4 mb-lg-0" data-aos="fade-down" data-aos-delay="400">
-														<div class="input-group">
-															<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
-																<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
-																	<path fill-rule="evenodd" clip-rule="evenodd" d="M14.375 10H5.625C5.29348 10 4.97554 10.1317 4.74112 10.3661C4.5067 10.6005 4.375 10.9185 4.375 11.25V17.5C4.375 17.8315 4.5067 18.1495 4.74112 18.3839C4.97554 18.6183 5.29348 18.75 5.625 18.75H14.375C14.7065 18.75 15.0245 18.6183 15.2589 18.3839C15.4933 18.1495 15.625 17.8315 15.625 17.5V11.25C15.625 10.9185 15.4933 10.6005 15.2589 10.3661C15.0245 10.1317 14.7065 10 14.375 10ZM5.625 8.75C4.96196 8.75 4.32607 9.01339 3.85723 9.48223C3.38839 9.95107 3.125 10.587 3.125 11.25V17.5C3.125 18.163 3.38839 18.7989 3.85723 19.2678C4.32607 19.7366 4.96196 20 5.625 20H14.375C15.038 20 15.6739 19.7366 16.1428 19.2678C16.6116 18.7989 16.875 18.163 16.875 17.5V11.25C16.875 10.587 16.6116 9.95107 16.1428 9.48223C15.6739 9.01339 15.038 8.75 14.375 8.75H5.625ZM5.625 5C5.625 3.83968 6.08594 2.72688 6.90641 1.90641C7.72688 1.08594 8.83968 0.625 10 0.625C11.1603 0.625 12.2731 1.08594 13.0936 1.90641C13.9141 2.72688 14.375 3.83968 14.375 5V8.75H13.125V5C13.125 4.1712 12.7958 3.37634 12.2097 2.79029C11.6237 2.20424 10.8288 1.875 10 1.875C9.1712 1.875 8.37634 2.20424 7.79029 2.79029C7.20424 3.37634 6.875 4.1712 6.875 5V8.75H5.625V5Z">
-																	</path>
-																</svg>
-															</div>
-															<input type="password" name="password" placeholder="Password" class="form-control border-start-0 border-dark-3 ps-1" required="required">																						
-														</div>
-													</div>
-													<div class="col-sm-10 col-md-7 col-lg-3 mb-4 mb-lg-0" data-aos="fade-down" data-aos-delay="500">
-														<div class="input-group">
-															<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
-																<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
-																	<path fill-rule="evenodd" clip-rule="evenodd" d="M10 20C10 20 17.5 12.8925 17.5 7.5C17.5 5.51088 16.7098 3.60322 15.3033 2.1967C13.8968 0.790176 11.9891 0 10 0C8.01088 0 6.10322 0.790176 4.6967 2.1967C3.29018 3.60322 2.5 5.51088 2.5 7.5C2.5 12.8925 10 20 10 20ZM10 11.25C10.9946 11.25 11.9484 10.8549 12.6517 10.1517C13.3549 9.44839 13.75 8.49456 13.75 7.5C13.75 6.50544 13.3549 5.55161 12.6517 4.84835C11.9484 4.14509 10.9946 3.75 10 3.75C9.00544 3.75 8.05161 4.14509 7.34835 4.84835C6.64509 5.55161 6.25 6.50544 6.25 7.5C6.25 8.49456 6.64509 9.44839 7.34835 10.1517C8.05161 10.8549 9.00544 11.25 10 11.25V11.25Z">
-																	</path>
-																</svg>
-															</div>
-															<input type="text" name="country" placeholder="Country" class="form-control border-start-0 border-dark-3 ps-1" required="required">																						
-														</div>
-													</div>
-													<div class="col-sm-10 col-md-7 col-lg-3" data-aos="fade-down" data-aos-delay="650">
-														<button class="btn btn-action-1 w-100">
-            Get started						
-														</button>
-													</div>
-												</div>
-											</form>
-											<p class="mb-0" data-aos="fade-down" data-aos-delay="750">
-            Out with the old, in with the new. The new is quicker, and it’s easier too.
-											</p>
-										</div>
-									</section>
-									<!-- Form 4 -->
-										<section class="bg-bg-3 py-10 py-lg-20 text-center">
-											<div class="container">
-												<h2 class="display-5 mb-6" data-aos="fade-down" data-aos-delay="0">
-            Get started
-												</h2>
-												<div class="row flex-column align-items-center">
-													<div class="col-xl-4 col-lg-5 col-md-6 col-sm-9">
-														<p class="fs-2 mb-10" data-aos="fade-down" data-aos-delay="150">
-					Start growing in half the time with an 
-															<span class="text-nowrap">
-						all-in-one
-															</span>
-						website builder.
-														</p>
-														<a href="#" class="btn btn-action-1 w-100 mb-6 position-relative ps-12" data-aos="fade-down" data-aos-delay="250">
-															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-light-1 position-absolute start-0 top-50 translate-middle-y ms-4">
-																<path fill-rule="evenodd" clip-rule="evenodd" d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z">
-																</path>
-															</svg>
-															<span>
-																Sign up with Facebook
-															</span>
-														</a>
-														<a href="#" class="btn btn-action-1 w-100 mb-6 position-relative ps-12" data-aos="fade-down" data-aos-delay="400">
-															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-light-1 position-absolute start-0 top-50 translate-middle-y ms-4">
-																<path d="M21.4555 10.154C21.5785 10.813 21.6455 11.502 21.6455 12.221C21.6455 17.845 17.8815 21.844 12.1965 21.844C10.9037 21.8444 9.62344 21.59 8.42894 21.0955C7.23443 20.6009 6.14908 19.8758 5.2349 18.9616C4.32072 18.0475 3.59563 16.9621 3.10107 15.7676C2.6065 14.5731 2.35215 13.2929 2.35254 12C2.35215 10.7072 2.6065 9.42691 3.10107 8.2324C3.59563 7.0379 4.32072 5.95255 5.2349 5.03837C6.14908 4.12419 7.23443 3.3991 8.42894 2.90453C9.62344 2.40997 10.9037 2.15561 12.1965 2.15601C14.8545 2.15601 17.0755 3.13401 18.7795 4.72201L16.0045 7.49701V7.49001C14.9715 6.50601 13.6605 6.00101 12.1965 6.00101C8.94854 6.00101 6.30854 8.74501 6.30854 11.994C6.30854 15.242 8.94854 17.992 12.1965 17.992C15.1435 17.992 17.1495 16.307 17.5615 13.993H12.1965V10.154H21.4565H21.4555Z">
-																</path>
-															</svg>
-															<span>
-																Sign up with Google
-															</span>
-														</a>
-														<a href="#" class="btn btn-action-1 w-100 position-relative ps-12" data-aos="fade-down" data-aos-delay="500">
-															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-light-1 position-absolute start-0 top-50 translate-middle-y ms-4">
-																<path d="M23.6425 4.93695C22.8075 5.30695 21.9105 5.55696 20.9675 5.66996C21.9405 5.08775 22.6685 4.17142 23.0155 3.09195C22.1014 3.63494 21.1009 4.01715 20.0575 4.22196C19.3559 3.47282 18.4266 2.97628 17.4138 2.80943C16.4011 2.64258 15.3616 2.81475 14.4568 3.29921C13.5519 3.78367 12.8323 4.55332 12.4097 5.48866C11.9871 6.424 11.8851 7.4727 12.1195 8.47195C10.2672 8.37895 8.45515 7.8975 6.80095 7.05886C5.14674 6.22022 3.68736 5.04312 2.51752 3.60396C2.11752 4.29396 1.88752 5.09396 1.88752 5.94596C1.88708 6.71295 2.07596 7.4682 2.4374 8.14469C2.79885 8.82118 3.32168 9.39799 3.95952 9.82396C3.2198 9.80042 2.4964 9.60054 1.84952 9.24095V9.30095C1.84945 10.3767 2.22156 11.4193 2.90271 12.252C3.58386 13.0846 4.53209 13.6559 5.58652 13.869C4.90031 14.0547 4.18086 14.082 3.48252 13.949C3.78002 14.8746 4.35952 15.684 5.13989 16.2639C5.92026 16.8438 6.86244 17.1651 7.83452 17.183C6.18436 18.4784 4.14641 19.181 2.04852 19.178C1.6769 19.1781 1.3056 19.1564 0.936523 19.113C3.066 20.4821 5.54486 21.2088 8.07652 21.206C16.6465 21.206 21.3315 14.108 21.3315 7.95195C21.3315 7.75196 21.3265 7.54995 21.3175 7.34995C22.2288 6.69093 23.0154 5.87485 23.6405 4.93995L23.6425 4.93695Z">
-																</path>
-															</svg>
-															<span>
-																Sign up with Twitter
-															</span>
-														</a>
-													</div>
-												</div>
-											</div>
-										</section>
-										<!-- Form 5 -->
-											<section class="bg-bg-3 py-10 py-lg-20">
-												<div class="container">
-													<div class="row justify-content-center">
-														<div class="col-xl-4 col-lg-5 col-md-7 col-sm-10">
-															<div class="row justify-content-between align-items-center mb-6" data-aos="fade-down" data-aos-delay="0">
-																<div class="col">
-																	<h1>
-                            Recovery
-																	</h1>
-																</div>
-																<div class="col-auto">
-																	<a href="#" class="fs-4 fw-bold">
-                            Sign In
-																	</a>
-																</div>
-															</div>
-															<form action="form-handler.php" method="post" enctype="multipart/form-data" class="js-ajax-form">
-																<!-- forms alerts -->
-																	<div class="alert alert-action-8 fixed-top invisible fade js-form-result" data-result="success" role="alert">
-																		<span class="js-form-alert-text" data-default-text="Thanks for your message!">
-																			Thanks for your message!
-																		</span>
-																	</div>
-																	<div class="alert alert-action-5 fixed-top invisible fade js-form-result" data-result="error" role="alert">
-																		<span class="js-form-alert-text">
-																			Error!
-																		</span>
-																	</div>
-																	<!-- forms alerts end -->
-																		<div class="input-group mb-6" data-aos="fade-down" data-aos-delay="250">
-																			<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
-																				<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
-																					<path fill-rule="evenodd" clip-rule="evenodd" d="M17.5002 3.75H2.5002C2.16868 3.75 1.85074 3.8817 1.61632 4.11612C1.3819 4.35054 1.2502 4.66848 1.2502 5V5.27104L10.0002 10.5213L18.7502 5.27098V5C18.7502 4.66848 18.6185 4.35054 18.3841 4.11612C18.1497 3.8817 17.8317 3.75 17.5002 3.75ZM0.000203451 5.64224C-6.77314e-05 5.63161 -6.79025e-05 5.62098 0.000203451 5.61034V5C0.000203451 4.33696 0.263596 3.70107 0.732437 3.23223C1.20128 2.76339 1.83716 2.5 2.5002 2.5H17.5002C18.1632 2.5 18.7991 2.76339 19.268 3.23223C19.7368 3.70107 20.0002 4.33696 20.0002 5V5.61604V5.63397V15C20.0002 15.663 19.7368 16.2989 19.268 16.7678C18.7991 17.2366 18.1632 17.5 17.5002 17.5H2.5002C1.83716 17.5 1.20128 17.2366 0.732437 16.7678C0.263596 16.2989 0.000203451 15.663 0.000203451 15V5.64224ZM18.7502 13.9117V6.72895L12.6801 10.3708L18.7502 13.9117ZM18.7051 15.3329L11.5602 11.165L11.4569 11.1048L10.0002 11.9788L8.54329 11.1049L8.44016 11.165L1.29533 15.3328C1.35239 15.5394 1.46213 15.7297 1.61632 15.8839C1.85074 16.1183 2.16868 16.25 2.5002 16.25H17.5002C17.8317 16.25 18.1497 16.1183 18.3841 15.8839C18.5383 15.7297 18.648 15.5394 18.7051 15.3329ZM1.2502 13.9117V6.73013L7.31989 10.371L1.2502 13.9117Z">
-																					</path>
-																				</svg>
-																			</div>
-																			<input type="email" name="email" placeholder="Email address" class="form-control border-start-0 border-dark-3 ps-1" required="required">																						
-																		</div>
-																		<button class="btn btn-action-1 w-100" data-aos="fade-down" data-aos-delay="400">
-						Send
-																		</button>
-																	</form>
-																</div>
-															</div>
-														</div>
-													</section>
-													<!-- Form 6 -->
-														<section class="bg-bg-3 py-10 py-lg-20 text-center">
-															<div class="container">
-																<div class="row align-items-center align-items-md-start align-items-lg-center flex-column-reverse flex-md-row">
-																	<div class="col-xl-1">
-																	</div>
-																	<div class="col-xl-4 col-lg-5 col-md-5 col-sm-10">
-																		<h1 class="mb-6" data-aos="fade-down" data-aos-delay="0">
-                    Sign In
-																		</h1>
-																		<form action="form-handler.php" method="post" enctype="multipart/form-data" class="js-ajax-form">
-																			<!-- forms alerts -->
-																				<div class="alert alert-action-8 fixed-top invisible fade js-form-result" data-result="success" role="alert">
-																					<span class="js-form-alert-text" data-default-text="Thanks for your message!">
-																						Thanks for your message!
-																					</span>
-																				</div>
-																				<div class="alert alert-action-5 fixed-top invisible fade js-form-result" data-result="error" role="alert">
-																					<span class="js-form-alert-text">
-																						Error!
-																					</span>
-																				</div>
-																				<!-- forms alerts end -->
-																					<div class="input-group mb-6" data-aos="fade-down" data-aos-delay="150">
-																						<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
-																							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
-																								<path fill-rule="evenodd" clip-rule="evenodd" d="M17.5002 3.75H2.5002C2.16868 3.75 1.85074 3.8817 1.61632 4.11612C1.3819 4.35054 1.2502 4.66848 1.2502 5V5.27104L10.0002 10.5213L18.7502 5.27098V5C18.7502 4.66848 18.6185 4.35054 18.3841 4.11612C18.1497 3.8817 17.8317 3.75 17.5002 3.75ZM0.000203451 5.64224C-6.77314e-05 5.63161 -6.79025e-05 5.62098 0.000203451 5.61034V5C0.000203451 4.33696 0.263596 3.70107 0.732437 3.23223C1.20128 2.76339 1.83716 2.5 2.5002 2.5H17.5002C18.1632 2.5 18.7991 2.76339 19.268 3.23223C19.7368 3.70107 20.0002 4.33696 20.0002 5V5.61604V5.63397V15C20.0002 15.663 19.7368 16.2989 19.268 16.7678C18.7991 17.2366 18.1632 17.5 17.5002 17.5H2.5002C1.83716 17.5 1.20128 17.2366 0.732437 16.7678C0.263596 16.2989 0.000203451 15.663 0.000203451 15V5.64224ZM18.7502 13.9117V6.72895L12.6801 10.3708L18.7502 13.9117ZM18.7051 15.3329L11.5602 11.165L11.4569 11.1048L10.0002 11.9788L8.54329 11.1049L8.44016 11.165L1.29533 15.3328C1.35239 15.5394 1.46213 15.7297 1.61632 15.8839C1.85074 16.1183 2.16868 16.25 2.5002 16.25H17.5002C17.8317 16.25 18.1497 16.1183 18.3841 15.8839C18.5383 15.7297 18.648 15.5394 18.7051 15.3329ZM1.2502 13.9117V6.73013L7.31989 10.371L1.2502 13.9117Z">
-																								</path>
-																							</svg>
-																						</div>
-																						<input type="email" name="email" placeholder="Email address" class="form-control border-start-0 border-dark-3 ps-1" required="required">																						
-																					</div>
-																					<div class="input-group mb-6" data-aos="fade-down" data-aos-delay="250">
-																						<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
-																							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
-																								<path fill-rule="evenodd" clip-rule="evenodd" d="M14.375 10H5.625C5.29348 10 4.97554 10.1317 4.74112 10.3661C4.5067 10.6005 4.375 10.9185 4.375 11.25V17.5C4.375 17.8315 4.5067 18.1495 4.74112 18.3839C4.97554 18.6183 5.29348 18.75 5.625 18.75H14.375C14.7065 18.75 15.0245 18.6183 15.2589 18.3839C15.4933 18.1495 15.625 17.8315 15.625 17.5V11.25C15.625 10.9185 15.4933 10.6005 15.2589 10.3661C15.0245 10.1317 14.7065 10 14.375 10ZM5.625 8.75C4.96196 8.75 4.32607 9.01339 3.85723 9.48223C3.38839 9.95107 3.125 10.587 3.125 11.25V17.5C3.125 18.163 3.38839 18.7989 3.85723 19.2678C4.32607 19.7366 4.96196 20 5.625 20H14.375C15.038 20 15.6739 19.7366 16.1428 19.2678C16.6116 18.7989 16.875 18.163 16.875 17.5V11.25C16.875 10.587 16.6116 9.95107 16.1428 9.48223C15.6739 9.01339 15.038 8.75 14.375 8.75H5.625ZM5.625 5C5.625 3.83968 6.08594 2.72688 6.90641 1.90641C7.72688 1.08594 8.83968 0.625 10 0.625C11.1603 0.625 12.2731 1.08594 13.0936 1.90641C13.9141 2.72688 14.375 3.83968 14.375 5V8.75H13.125V5C13.125 4.1712 12.7958 3.37634 12.2097 2.79029C11.6237 2.20424 10.8288 1.875 10 1.875C9.1712 1.875 8.37634 2.20424 7.79029 2.79029C7.20424 3.37634 6.875 4.1712 6.875 5V8.75H5.625V5Z">
-																								</path>
-																							</svg>
-																						</div>
-																						<input type="password" name="password" placeholder="Password" class="form-control border-start-0 border-dark-3 ps-1" required="required">																						
-																					</div>
-																					<button class="btn btn-action-1 w-100 mb-6" data-aos="fade-down" data-aos-delay="400">
-						Sign In
-																					</button>
-																					<div data-aos="fade-down" data-aos-delay="250">
-																						<p class="d-inline-block text-dark-3 mb-6">
-		Don’t have an account?
-																						</p>
-																						<a href="#" class="ms-1">
-	Log In
-																						</a>
-																					</div>
-																					<div class="w-50 border-bottom border-bg-2 mx-auto mb-6" data-aos="fade-down" data-aos-delay="400">
-																					</div>
-																					<p class="mb-6">
-		Sign In via socials
-																					</p>
-																					<div class="row g-0">
-																						<div class="col-4 pe-2">
-																							<a href="#" class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center">
-																								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-1">
-																									<path fill-rule="evenodd" clip-rule="evenodd" d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z">
-																									</path>
-																								</svg>
-																							</a>
-																						</div>
-																						<div class="col-4 px-1">
-																							<a href="#" class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center">
-																								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-1">
-																									<path d="M19.4565 8.15425C19.5795 8.81325 19.6465 9.50225 19.6465 10.2213C19.6465 15.8453 15.8825 19.8442 10.1975 19.8442C8.90467 19.8446 7.62442 19.5903 6.42991 19.0957C5.23541 18.6012 4.15006 17.8761 3.23588 16.9619C2.3217 16.0477 1.59661 14.9624 1.10204 13.7679C0.607475 12.5733 0.353122 11.2931 0.353516 10.0003C0.353122 8.70741 0.607475 7.42716 1.10204 6.23265C1.59661 5.03814 2.3217 3.95279 3.23588 3.03861C4.15006 2.12443 5.23541 1.39935 6.42991 0.904778C7.62442 0.41021 8.90467 0.155856 10.1975 0.15625C12.8555 0.15625 15.0765 1.13425 16.7805 2.72225L14.0055 5.49725V5.49025C12.9725 4.50625 11.6615 4.00125 10.1975 4.00125C6.94952 4.00125 4.30952 6.74525 4.30952 9.99425C4.30952 13.2423 6.94952 15.9923 10.1975 15.9923C13.1445 15.9923 15.1505 14.3073 15.5625 11.9933H10.1975V8.15425H19.4575H19.4565Z">
-																									</path>
-																								</svg>
-																							</a>
-																						</div>
-																						<div class="col-4 ps-2">
-																							<a href="#" class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center">
-																								<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-1">
-																									<path d="M23.6435 2.93757C22.8085 3.30757 21.9115 3.55757 20.9685 3.67057C21.9415 3.08836 22.6694 2.17203 23.0165 1.09257C22.1023 1.63555 21.1018 2.01776 20.0585 2.22257C19.3569 1.47343 18.4276 0.976891 17.4148 0.810039C16.4021 0.643187 15.3626 0.815357 14.4577 1.29982C13.5529 1.78428 12.8333 2.55393 12.4107 3.48927C11.988 4.42461 11.886 5.47332 12.1205 6.47257C10.2682 6.37956 8.45613 5.89811 6.80192 5.05947C5.14772 4.22083 3.68834 3.04373 2.5185 1.60457C2.1185 2.29457 1.8885 3.09457 1.8885 3.94657C1.88805 4.71356 2.07693 5.46881 2.43838 6.1453C2.79982 6.82179 3.32266 7.3986 3.9605 7.82457C3.22078 7.80103 2.49737 7.60115 1.8505 7.24157V7.30156C1.85043 8.37731 2.22253 9.41994 2.90368 10.2526C3.58483 11.0852 4.53307 11.6565 5.5875 11.8696C4.90128 12.0553 4.18184 12.0826 3.4835 11.9496C3.781 12.8752 4.3605 13.6846 5.14087 14.2645C5.92124 14.8444 6.86342 15.1657 7.8355 15.1836C6.18533 16.479 4.14739 17.1817 2.0495 17.1786C1.67788 17.1787 1.30658 17.157 0.9375 17.1136C3.06698 18.4827 5.54584 19.2094 8.0775 19.2066C16.6475 19.2066 21.3325 12.1086 21.3325 5.95257C21.3325 5.75257 21.3275 5.55056 21.3185 5.35056C22.2298 4.69154 23.0164 3.87546 23.6415 2.94057L23.6435 2.93757Z">
-																									</path>
-																								</svg>
-																							</a>
-																						</div>
-																					</div>
-																				</form>
-																			</div>
-																			<div class="col-md-1">
-																			</div>
-																			<div class="col-6">
-																				<img src="i/form-6.png" srcset="i/form-6@2x.png 2x" alt="" class="img-fluid mb-12 mb-lg-0" data-aos="fade-down" data-aos-delay="0">
-																			</div>
-																		</div>
-																	</div>
-																</section>
-																<!-- Form 7 -->
-																	<section class="bg-bg-3 py-10 py-lg-20 text-center">
-																		<div class="container">
-																			<div class="row align-items-lg-center justify-content-center">
-																				<div class="col-6">
-																					<img src="i/form-7.png" srcset="i/form-7@2x.png 2x" alt="" class="img-fluid mb-12 mb-lg-0" data-aos="fade-down" data-aos-delay="0">
-																				</div>
-																				<div class="col-md-1">
-																				</div>
-																				<div class="col-xl-4 col-lg-5 col-md-5 col-sm-10">
-																					<h1 class="mb-6" data-aos="fade-down" data-aos-delay="0">
-                    Sign In
-																					</h1>
-																					<form action="form-handler.php" method="post" enctype="multipart/form-data" class="js-ajax-form">
-																						<!-- forms alerts -->
-																							<div class="alert alert-action-8 fixed-top invisible fade js-form-result" data-result="success" role="alert">
-																								<span class="js-form-alert-text" data-default-text="Thanks for your message!">
-																									Thanks for your message!
-																								</span>
-																							</div>
-																							<div class="alert alert-action-5 fixed-top invisible fade js-form-result" data-result="error" role="alert">
-																								<span class="js-form-alert-text">
-																									Error!
-																								</span>
-																							</div>
-																							<!-- forms alerts end -->
-																								<div class="input-group mb-6" data-aos="fade-down" data-aos-delay="150">
-																									<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
-																										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
-																											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.5002 3.75H2.5002C2.16868 3.75 1.85074 3.8817 1.61632 4.11612C1.3819 4.35054 1.2502 4.66848 1.2502 5V5.27104L10.0002 10.5213L18.7502 5.27098V5C18.7502 4.66848 18.6185 4.35054 18.3841 4.11612C18.1497 3.8817 17.8317 3.75 17.5002 3.75ZM0.000203451 5.64224C-6.77314e-05 5.63161 -6.79025e-05 5.62098 0.000203451 5.61034V5C0.000203451 4.33696 0.263596 3.70107 0.732437 3.23223C1.20128 2.76339 1.83716 2.5 2.5002 2.5H17.5002C18.1632 2.5 18.7991 2.76339 19.268 3.23223C19.7368 3.70107 20.0002 4.33696 20.0002 5V5.61604V5.63397V15C20.0002 15.663 19.7368 16.2989 19.268 16.7678C18.7991 17.2366 18.1632 17.5 17.5002 17.5H2.5002C1.83716 17.5 1.20128 17.2366 0.732437 16.7678C0.263596 16.2989 0.000203451 15.663 0.000203451 15V5.64224ZM18.7502 13.9117V6.72895L12.6801 10.3708L18.7502 13.9117ZM18.7051 15.3329L11.5602 11.165L11.4569 11.1048L10.0002 11.9788L8.54329 11.1049L8.44016 11.165L1.29533 15.3328C1.35239 15.5394 1.46213 15.7297 1.61632 15.8839C1.85074 16.1183 2.16868 16.25 2.5002 16.25H17.5002C17.8317 16.25 18.1497 16.1183 18.3841 15.8839C18.5383 15.7297 18.648 15.5394 18.7051 15.3329ZM1.2502 13.9117V6.73013L7.31989 10.371L1.2502 13.9117Z">
-																											</path>
-																										</svg>
-																									</div>
-																									<input type="email" name="email" placeholder="Email address" class="form-control border-start-0 border-dark-3 ps-1" required="required">																						
-																								</div>
-																								<div class="input-group mb-6" data-aos="fade-down" data-aos-delay="250">
-																									<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
-																										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
-																											<path fill-rule="evenodd" clip-rule="evenodd" d="M14.375 10H5.625C5.29348 10 4.97554 10.1317 4.74112 10.3661C4.5067 10.6005 4.375 10.9185 4.375 11.25V17.5C4.375 17.8315 4.5067 18.1495 4.74112 18.3839C4.97554 18.6183 5.29348 18.75 5.625 18.75H14.375C14.7065 18.75 15.0245 18.6183 15.2589 18.3839C15.4933 18.1495 15.625 17.8315 15.625 17.5V11.25C15.625 10.9185 15.4933 10.6005 15.2589 10.3661C15.0245 10.1317 14.7065 10 14.375 10ZM5.625 8.75C4.96196 8.75 4.32607 9.01339 3.85723 9.48223C3.38839 9.95107 3.125 10.587 3.125 11.25V17.5C3.125 18.163 3.38839 18.7989 3.85723 19.2678C4.32607 19.7366 4.96196 20 5.625 20H14.375C15.038 20 15.6739 19.7366 16.1428 19.2678C16.6116 18.7989 16.875 18.163 16.875 17.5V11.25C16.875 10.587 16.6116 9.95107 16.1428 9.48223C15.6739 9.01339 15.038 8.75 14.375 8.75H5.625ZM5.625 5C5.625 3.83968 6.08594 2.72688 6.90641 1.90641C7.72688 1.08594 8.83968 0.625 10 0.625C11.1603 0.625 12.2731 1.08594 13.0936 1.90641C13.9141 2.72688 14.375 3.83968 14.375 5V8.75H13.125V5C13.125 4.1712 12.7958 3.37634 12.2097 2.79029C11.6237 2.20424 10.8288 1.875 10 1.875C9.1712 1.875 8.37634 2.20424 7.79029 2.79029C7.20424 3.37634 6.875 4.1712 6.875 5V8.75H5.625V5Z">
-																											</path>
-																										</svg>
-																									</div>
-																									<input type="password" name="password" placeholder="Password" class="form-control border-start-0 border-dark-3 ps-1" required="required">																						
-																								</div>
-																								<button class="btn btn-action-1 w-100 mb-6" data-aos="fade-down" data-aos-delay="400">
-						Sign In
-																								</button>
-																								<div data-aos="fade-down" data-aos-delay="250">
-																									<p class="d-inline-block text-dark-3 mb-6">
-		Don’t have an account?
-																									</p>
-																									<a href="#" class="ms-1">
-	Log In
-																									</a>
-																								</div>
-																								<div class="w-50 border-bottom border-bg-2 mx-auto mb-6" data-aos="fade-down" data-aos-delay="400">
-																								</div>
-																								<p class="mb-6">
-		Sign In via socials
-																								</p>
-																								<div class="row g-0">
-																									<div class="col-4 pe-2">
-																										<a href="#" class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center">
-																											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-1">
-																												<path fill-rule="evenodd" clip-rule="evenodd" d="M0 12.067C0 18.033 4.333 22.994 10 24V15.333H7V12H10V9.333C10 6.333 11.933 4.667 14.667 4.667C15.533 4.667 16.467 4.8 17.333 4.933V8H15.8C14.333 8 14 8.733 14 9.667V12H17.2L16.667 15.333H14V24C19.667 22.994 24 18.034 24 12.067C24 5.43 18.6 0 12 0C5.4 0 0 5.43 0 12.067Z">
-																												</path>
-																											</svg>
-																										</a>
-																									</div>
-																									<div class="col-4 px-1">
-																										<a href="#" class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center">
-																											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-1">
-																												<path d="M19.4565 8.15425C19.5795 8.81325 19.6465 9.50225 19.6465 10.2213C19.6465 15.8453 15.8825 19.8442 10.1975 19.8442C8.90467 19.8446 7.62442 19.5903 6.42991 19.0957C5.23541 18.6012 4.15006 17.8761 3.23588 16.9619C2.3217 16.0477 1.59661 14.9624 1.10204 13.7679C0.607475 12.5733 0.353122 11.2931 0.353516 10.0003C0.353122 8.70741 0.607475 7.42716 1.10204 6.23265C1.59661 5.03814 2.3217 3.95279 3.23588 3.03861C4.15006 2.12443 5.23541 1.39935 6.42991 0.904778C7.62442 0.41021 8.90467 0.155856 10.1975 0.15625C12.8555 0.15625 15.0765 1.13425 16.7805 2.72225L14.0055 5.49725V5.49025C12.9725 4.50625 11.6615 4.00125 10.1975 4.00125C6.94952 4.00125 4.30952 6.74525 4.30952 9.99425C4.30952 13.2423 6.94952 15.9923 10.1975 15.9923C13.1445 15.9923 15.1505 14.3073 15.5625 11.9933H10.1975V8.15425H19.4575H19.4565Z">
-																												</path>
-																											</svg>
-																										</a>
-																									</div>
-																									<div class="col-4 ps-2">
-																										<a href="#" class="btn btn-bg-2 w-100 h-100 d-flex justify-content-center align-items-center">
-																											<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-1">
-																												<path d="M23.6435 2.93757C22.8085 3.30757 21.9115 3.55757 20.9685 3.67057C21.9415 3.08836 22.6694 2.17203 23.0165 1.09257C22.1023 1.63555 21.1018 2.01776 20.0585 2.22257C19.3569 1.47343 18.4276 0.976891 17.4148 0.810039C16.4021 0.643187 15.3626 0.815357 14.4577 1.29982C13.5529 1.78428 12.8333 2.55393 12.4107 3.48927C11.988 4.42461 11.886 5.47332 12.1205 6.47257C10.2682 6.37956 8.45613 5.89811 6.80192 5.05947C5.14772 4.22083 3.68834 3.04373 2.5185 1.60457C2.1185 2.29457 1.8885 3.09457 1.8885 3.94657C1.88805 4.71356 2.07693 5.46881 2.43838 6.1453C2.79982 6.82179 3.32266 7.3986 3.9605 7.82457C3.22078 7.80103 2.49737 7.60115 1.8505 7.24157V7.30156C1.85043 8.37731 2.22253 9.41994 2.90368 10.2526C3.58483 11.0852 4.53307 11.6565 5.5875 11.8696C4.90128 12.0553 4.18184 12.0826 3.4835 11.9496C3.781 12.8752 4.3605 13.6846 5.14087 14.2645C5.92124 14.8444 6.86342 15.1657 7.8355 15.1836C6.18533 16.479 4.14739 17.1817 2.0495 17.1786C1.67788 17.1787 1.30658 17.157 0.9375 17.1136C3.06698 18.4827 5.54584 19.2094 8.0775 19.2066C16.6475 19.2066 21.3325 12.1086 21.3325 5.95257C21.3325 5.75257 21.3275 5.55056 21.3185 5.35056C22.2298 4.69154 23.0164 3.87546 23.6415 2.94057L23.6435 2.93757Z">
-																												</path>
-																											</svg>
-																										</a>
-																									</div>
-																								</div>
-																							</form>
-																						</div>
-																						<div class="col-xl-1">
-																						</div>
-																					</div>
-																				</div>
-																			</section>
-																			<!-- Form 8 -->
-																				<section class="bg-bg-3 pt-10 pt-md-0">
-																					<div class="container">
-																						<div class="row justify-content-between flex-md-row-reverse">
-																							<div class="col-6">
-																								<div class="ms-8 ms-lg-0 d-none d-md-block h-100 bg-size-fit-y bg-position-center" data-bg-src="i/form-8.png" data-bg-src-2x="i/form-8@2x.png" data-aos="fade-down" data-aos-delay="500">
-																								</div>
-																								<img src="i/form-8.png" srcset="i/form-8@2x.png 2x" alt="" class="d-md-none img-fluid" data-aos="fade-down" data-aos-delay="0">
-																							</div>
-																							<div class="py-10 py-lg-20 col-xl-4 col-lg-5 col-md-6 col-sm-9">
-																								<h1 class="mb-4" data-aos="fade-down" data-aos-delay="0">
-                        Startup Framework
-																								</h1>
-																								<p class="mb-8" data-aos="fade-down" data-aos-delay="150">
-                        Out with the old, in with the new. The new is quicker, and it’s easier too.
-																								</p>
-																								<form action="form-handler.php" method="post" enctype="multipart/form-data" class="js-ajax-form">
-																									<!-- forms alerts -->
-																										<div class="alert alert-action-8 fixed-top invisible fade js-form-result" data-result="success" role="alert">
-																											<span class="js-form-alert-text" data-default-text="Thanks for your message!">
-																												Thanks for your message!
-																											</span>
-																										</div>
-																										<div class="alert alert-action-5 fixed-top invisible fade js-form-result" data-result="error" role="alert">
-																											<span class="js-form-alert-text">
-																												Error!
-																											</span>
-																										</div>
-																										<!-- forms alerts end -->
-																											<div class="row justify-content-center">
-																												<div class="mb-6 col-6" data-aos="fade-down" data-aos-delay="150">
-																													<div class="input-group">
-																														<input type="text" name="firstname" placeholder="First name" class="form-control border border-dark-3" required="required">																						
-																													</div>
-																												</div>
-																												<div class="mb-6 col-6" data-aos="fade-down" data-aos-delay="250">
-																													<div class="input-group">
-																														<input type="text" name="lastname" placeholder="Last name" class="form-control border border-dark-3" required="required">																						
-																													</div>
-																												</div>
-																											</div>
-																											<div class="input-group mb-6" data-aos="fade-down" data-aos-delay="400">
-																												<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
-																													<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
-																														<path fill-rule="evenodd" clip-rule="evenodd" d="M17.5002 3.75H2.5002C2.16868 3.75 1.85074 3.8817 1.61632 4.11612C1.3819 4.35054 1.2502 4.66848 1.2502 5V5.27104L10.0002 10.5213L18.7502 5.27098V5C18.7502 4.66848 18.6185 4.35054 18.3841 4.11612C18.1497 3.8817 17.8317 3.75 17.5002 3.75ZM0.000203451 5.64224C-6.77314e-05 5.63161 -6.79025e-05 5.62098 0.000203451 5.61034V5C0.000203451 4.33696 0.263596 3.70107 0.732437 3.23223C1.20128 2.76339 1.83716 2.5 2.5002 2.5H17.5002C18.1632 2.5 18.7991 2.76339 19.268 3.23223C19.7368 3.70107 20.0002 4.33696 20.0002 5V5.61604V5.63397V15C20.0002 15.663 19.7368 16.2989 19.268 16.7678C18.7991 17.2366 18.1632 17.5 17.5002 17.5H2.5002C1.83716 17.5 1.20128 17.2366 0.732437 16.7678C0.263596 16.2989 0.000203451 15.663 0.000203451 15V5.64224ZM18.7502 13.9117V6.72895L12.6801 10.3708L18.7502 13.9117ZM18.7051 15.3329L11.5602 11.165L11.4569 11.1048L10.0002 11.9788L8.54329 11.1049L8.44016 11.165L1.29533 15.3328C1.35239 15.5394 1.46213 15.7297 1.61632 15.8839C1.85074 16.1183 2.16868 16.25 2.5002 16.25H17.5002C17.8317 16.25 18.1497 16.1183 18.3841 15.8839C18.5383 15.7297 18.648 15.5394 18.7051 15.3329ZM1.2502 13.9117V6.73013L7.31989 10.371L1.2502 13.9117Z">
-																														</path>
-																													</svg>
-																												</div>
-																												<input type="email" name="email" placeholder="Email address" class="form-control border-start-0 border-dark-3 ps-1" required="required">																						
-																											</div>
-																											<div class="input-group mb-6" data-aos="fade-down" data-aos-delay="500">
-																												<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
-																													<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
-																														<path fill-rule="evenodd" clip-rule="evenodd" d="M14.375 10H5.625C5.29348 10 4.97554 10.1317 4.74112 10.3661C4.5067 10.6005 4.375 10.9185 4.375 11.25V17.5C4.375 17.8315 4.5067 18.1495 4.74112 18.3839C4.97554 18.6183 5.29348 18.75 5.625 18.75H14.375C14.7065 18.75 15.0245 18.6183 15.2589 18.3839C15.4933 18.1495 15.625 17.8315 15.625 17.5V11.25C15.625 10.9185 15.4933 10.6005 15.2589 10.3661C15.0245 10.1317 14.7065 10 14.375 10ZM5.625 8.75C4.96196 8.75 4.32607 9.01339 3.85723 9.48223C3.38839 9.95107 3.125 10.587 3.125 11.25V17.5C3.125 18.163 3.38839 18.7989 3.85723 19.2678C4.32607 19.7366 4.96196 20 5.625 20H14.375C15.038 20 15.6739 19.7366 16.1428 19.2678C16.6116 18.7989 16.875 18.163 16.875 17.5V11.25C16.875 10.587 16.6116 9.95107 16.1428 9.48223C15.6739 9.01339 15.038 8.75 14.375 8.75H5.625ZM5.625 5C5.625 3.83968 6.08594 2.72688 6.90641 1.90641C7.72688 1.08594 8.83968 0.625 10 0.625C11.1603 0.625 12.2731 1.08594 13.0936 1.90641C13.9141 2.72688 14.375 3.83968 14.375 5V8.75H13.125V5C13.125 4.1712 12.7958 3.37634 12.2097 2.79029C11.6237 2.20424 10.8288 1.875 10 1.875C9.1712 1.875 8.37634 2.20424 7.79029 2.79029C7.20424 3.37634 6.875 4.1712 6.875 5V8.75H5.625V5Z">
-																														</path>
-																													</svg>
-																												</div>
-																												<input type="password" name="password" placeholder="Password" class="form-control border-start-0 border-dark-3 ps-1" required="required">																						
-																											</div>
-																											<label class="form-check" data-aos="fade-down" data-aos-delay="650">
-																												<input class="form-check-input" type="checkbox" name="subscribe" checked="checked">
-																												<p class="text-start ms-9 text-dark-1 mb-6">
-					Subscribe to our newsletter
-																												</p>
-																											</label>
-																											<button class="btn btn-action-1 w-100 mb-6" data-aos="fade-down" data-aos-delay="750">
-						Sign Up
-																											</button>
-																											<p class="d-inline-block text-dark-3 mb-0" data-aos="fade-down" data-aos-delay="900">
-                        Already have an account? 
-																											</p>
-																											<a href="#" class="ms-1" data-aos="fade-down" data-aos-delay="900">
-                        Log In
-																											</a>
-																										</form>
-																									</div>
-																								</div>
-																							</div>
-																						</section>
-		<!-- Bootstrap JS -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" data-integrity="38d870e9c3c4e532551b530706abb811"></script>
+							<div class="mb-6 col-6" data-aos="fade-down" data-aos-delay="250">
+								<div class="input-group">
+									<input type="text" name="lastname" placeholder="Last name"
+										class="form-control border border-dark-3" required="required">
+								</div>
+							</div>
+						</div>
+						<div class="input-group mb-6" data-aos="fade-down" data-aos-delay="400">
+							<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M17.5002 3.75H2.5002C2.16868 3.75 1.85074 3.8817 1.61632 4.11612C1.3819 4.35054 1.2502 4.66848 1.2502 5V5.27104L10.0002 10.5213L18.7502 5.27098V5C18.7502 4.66848 18.6185 4.35054 18.3841 4.11612C18.1497 3.8817 17.8317 3.75 17.5002 3.75ZM0.000203451 5.64224C-6.77314e-05 5.63161 -6.79025e-05 5.62098 0.000203451 5.61034V5C0.000203451 4.33696 0.263596 3.70107 0.732437 3.23223C1.20128 2.76339 1.83716 2.5 2.5002 2.5H17.5002C18.1632 2.5 18.7991 2.76339 19.268 3.23223C19.7368 3.70107 20.0002 4.33696 20.0002 5V5.61604V5.63397V15C20.0002 15.663 19.7368 16.2989 19.268 16.7678C18.7991 17.2366 18.1632 17.5 17.5002 17.5H2.5002C1.83716 17.5 1.20128 17.2366 0.732437 16.7678C0.263596 16.2989 0.000203451 15.663 0.000203451 15V5.64224ZM18.7502 13.9117V6.72895L12.6801 10.3708L18.7502 13.9117ZM18.7051 15.3329L11.5602 11.165L11.4569 11.1048L10.0002 11.9788L8.54329 11.1049L8.44016 11.165L1.29533 15.3328C1.35239 15.5394 1.46213 15.7297 1.61632 15.8839C1.85074 16.1183 2.16868 16.25 2.5002 16.25H17.5002C17.8317 16.25 18.1497 16.1183 18.3841 15.8839C18.5383 15.7297 18.648 15.5394 18.7051 15.3329ZM1.2502 13.9117V6.73013L7.31989 10.371L1.2502 13.9117Z">
+									</path>
+								</svg>
+							</div>
+							<input type="email" name="email" placeholder="Email address"
+								class="form-control border-start-0 border-dark-3 ps-1" required="required">
+						</div>
+						<div class="input-group mb-6" data-aos="fade-down" data-aos-delay="500">
+							<div class="input-group-text border-end-0 border-dark-3 ps-4 pe-2">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg" class="fill-dark-3">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M14.375 10H5.625C5.29348 10 4.97554 10.1317 4.74112 10.3661C4.5067 10.6005 4.375 10.9185 4.375 11.25V17.5C4.375 17.8315 4.5067 18.1495 4.74112 18.3839C4.97554 18.6183 5.29348 18.75 5.625 18.75H14.375C14.7065 18.75 15.0245 18.6183 15.2589 18.3839C15.4933 18.1495 15.625 17.8315 15.625 17.5V11.25C15.625 10.9185 15.4933 10.6005 15.2589 10.3661C15.0245 10.1317 14.7065 10 14.375 10ZM5.625 8.75C4.96196 8.75 4.32607 9.01339 3.85723 9.48223C3.38839 9.95107 3.125 10.587 3.125 11.25V17.5C3.125 18.163 3.38839 18.7989 3.85723 19.2678C4.32607 19.7366 4.96196 20 5.625 20H14.375C15.038 20 15.6739 19.7366 16.1428 19.2678C16.6116 18.7989 16.875 18.163 16.875 17.5V11.25C16.875 10.587 16.6116 9.95107 16.1428 9.48223C15.6739 9.01339 15.038 8.75 14.375 8.75H5.625ZM5.625 5C5.625 3.83968 6.08594 2.72688 6.90641 1.90641C7.72688 1.08594 8.83968 0.625 10 0.625C11.1603 0.625 12.2731 1.08594 13.0936 1.90641C13.9141 2.72688 14.375 3.83968 14.375 5V8.75H13.125V5C13.125 4.1712 12.7958 3.37634 12.2097 2.79029C11.6237 2.20424 10.8288 1.875 10 1.875C9.1712 1.875 8.37634 2.20424 7.79029 2.79029C7.20424 3.37634 6.875 4.1712 6.875 5V8.75H5.625V5Z">
+									</path>
+								</svg>
+							</div>
+							<input type="password" name="password" placeholder="Password"
+								class="form-control border-start-0 border-dark-3 ps-1" required="required">
+						</div>
+						<label class="form-check" data-aos="fade-down" data-aos-delay="650">
+							<input class="form-check-input" type="checkbox" name="subscribe" checked="checked">
+							<p class="text-start ms-9 text-dark-1 mb-6">
+								Subscribe to our newsletter
+							</p>
+						</label>
+						<button class="btn btn-action-1 w-100 mb-6" data-aos="fade-down" data-aos-delay="750">
+							Sign Up
+						</button>
+						<p class="d-inline-block text-dark-3 mb-0" data-aos="fade-down" data-aos-delay="900">
+							Already have an account?
+						</p>
+						<a href="#" class="ms-1" data-aos="fade-down" data-aos-delay="900">
+							Log In
+						</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+		data-integrity="38d870e9c3c4e532551b530706abb811"></script>
 
-		<!-- AOS 3.0.0-beta.6 plugin JS (Animations) -->
-		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-		<!-- Startup Plugins -->		<script src="app-dist/js/plugins.min.js?v=5.6.692"></script>
-		
-		<!-- Startup JS (Custom js for all blocks) - Remove ".min" if you want to edit a JS code -->
-		<script src="app-dist/js/scripts.min.js?v=5.6.692"></script>
+	<!-- AOS 3.0.0-beta.6 plugin JS (Animations) -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<!-- Startup Plugins -->
+	<script src="app-dist/js/plugins.min.js?v=5.6.692"></script>
 
-		<!-- Startup scripts runner (for preview only, this code won't be added in the export) -->
-		<script>
-		document.runStartupScripts = function(functionToRun,params){
-			console.log("fired runStartupScripts("+functionToRun+")");
+	<!-- Startup JS (Custom js for all blocks) - Remove ".min" if you want to edit a JS code -->
+	<script src="app-dist/js/scripts.min.js?v=5.6.692"></script>
+
+	<!-- Startup scripts runner (for preview only, this code won't be added in the export) -->
+	<script>
+		document.runStartupScripts = function (functionToRun, params) {
+			console.log("fired runStartupScripts(" + functionToRun + ")");
 			var startupFunctions = {
-				setBackgrounds: function() {setBackgrounds()},
-				switchControlSlider: function() {switchControlSlider()},
-				stopYouTubeOnModalClose: function() {stopYouTubeOnModalClose()},
-				initAnimations: function() {initAnimations(params)},
-				reInitAnimations: function() {
-					if(params){
+				setBackgrounds: function () { setBackgrounds() },
+				switchControlSlider: function () { switchControlSlider() },
+				stopYouTubeOnModalClose: function () { stopYouTubeOnModalClose() },
+				initAnimations: function () { initAnimations(params) },
+				reInitAnimations: function () {
+					if (params) {
 						var elements;
 						var settings = Object.assign({}, params);
 						settings.animationSpeed = parseInt(settings.animationSpeed);
-						if(settings.animation){
+						if (settings.animation) {
 							elements = document.querySelectorAll("*[sf-anim-delay]");
-							if(elements.length){
-								elements.forEach(function(el) {
+							if (elements.length) {
+								elements.forEach(function (el) {
 									settings.delay = settings.animationSpeed * 50 * parseFloat(el.getAttribute("sf-anim-delay"));
-									if(settings.delay%50!=0){
-										settings.delay += settings.delay%50;
+									if (settings.delay % 50 != 0) {
+										settings.delay += settings.delay % 50;
 									}
 									settings.style = el.getAttribute("sf-anim-style");
-									if(settings.style=="" || settings.style==undefined){
+									if (settings.style == "" || settings.style == undefined) {
 										settings.style = settings.animationStyle;
 									}
-									el.classList.remove("aos-animate","aos-init");
-									el.setAttribute("data-aos",settings.style);
-									el.setAttribute("data-aos-delay",settings.delay);
+									el.classList.remove("aos-animate", "aos-init");
+									el.setAttribute("data-aos", settings.style);
+									el.setAttribute("data-aos-delay", settings.delay);
 								});
 							}
 							settings.animationSpeed = settings.animationSpeed * 100;
 							initAnimations(settings.animationSpeed);
 							elements = document.querySelectorAll(".aos-init");
-							if(elements.length){
-								elements.forEach(function(el) {
+							if (elements.length) {
+								elements.forEach(function (el) {
 									el.classList.remove("aos-animate");
 								});
-								if(settings.timeOut){
+								if (settings.timeOut) {
 									clearTimeout(settings.timeOut);
 								}
-								settings.timeOut = setTimeout(function(){
-									elements.forEach(function(el) {
+								settings.timeOut = setTimeout(function () {
+									elements.forEach(function (el) {
 										el.classList.add("aos-animate");
 									});
-								},settings.animationSpeed);
-							}		
-						}else{
+								}, settings.animationSpeed);
+							}
+						} else {
 							elements = document.querySelectorAll(".aos-init");
-							if(elements.length){
-								elements.forEach(function(el) {
+							if (elements.length) {
+								elements.forEach(function (el) {
 									el.removeAttribute("data-aos");
 									el.removeAttribute("data-aos-delay");
-									el.classList.remove("aos-animate","aos-init");
+									el.classList.remove("aos-animate", "aos-init");
 								});
 							}
 						}
 					}
 				},
-				showBsElement: function() {
-					if(params){
-						if(params.classList.contains("offcanvas")){
-							var eBsElement = new bootstrap.Offcanvas(params);							
+				showBsElement: function () {
+					if (params) {
+						if (params.classList.contains("offcanvas")) {
+							var eBsElement = new bootstrap.Offcanvas(params);
 						}
-						if(params.classList.contains("modal")){
-							var eBsElement = new bootstrap.Modal(params);							
+						if (params.classList.contains("modal")) {
+							var eBsElement = new bootstrap.Modal(params);
 						}
-						if(params.classList.contains("dropdown-toggle")){
-							var eBsElement = new bootstrap.Dropdown(params);							
+						if (params.classList.contains("dropdown-toggle")) {
+							var eBsElement = new bootstrap.Dropdown(params);
 						}
 						eBsElement.show();
 					}
 				},
-				destroyBsElements: function() {
+				destroyBsElements: function () {
 					var elements = document.querySelectorAll(".offcanvas, .modal, .dropdown-toggle");
 					var eBsElement;
-					if(elements.length){
-						elements.forEach(function(el) {
-							if(el.classList.contains("offcanvas")){
+					if (elements.length) {
+						elements.forEach(function (el) {
+							if (el.classList.contains("offcanvas")) {
 								eBsElement = bootstrap.Offcanvas.getInstance(el);
-							}else if(el.classList.contains("modal")){
+							} else if (el.classList.contains("modal")) {
 								eBsElement = bootstrap.Modal.getInstance(el);
-							}else if(el.classList.contains("dropdown-toggle")){
+							} else if (el.classList.contains("dropdown-toggle")) {
 								eBsElement = bootstrap.Dropdown.getInstance(el);
 							}
-							if(eBsElement){
+							if (eBsElement) {
 								eBsElement.hide();
-								el.style.display="";								
-								el.style.visibility="";								
+								el.style.display = "";
+								el.style.visibility = "";
 							}
 						});
 					}
 				},
 			};
-			if(functionToRun){
+			if (functionToRun) {
 				startupFunctions[functionToRun](params);
-			}else{
-				Object.keys(startupFunctions).forEach(function(key){
-					if(key!="showBsElement" && key!="destroyBsElements"){ // skip
-						startupFunctions[key](params);						
+			} else {
+				Object.keys(startupFunctions).forEach(function (key) {
+					if (key != "showBsElement" && key != "destroyBsElements") { // skip
+						startupFunctions[key](params);
 					}
 				});
 			}
 		};
-		
-		</script>
-	</body>
+
+	</script>
+</body>
+
 </html>
