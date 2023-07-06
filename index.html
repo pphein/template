@@ -147,8 +147,8 @@
             });
         });
 
-        $('.iframe-show').on('click', function (event) {
-            var showPage = event.target.innerHTML.toLowerCase() + '.html';
+        $('.iframe-show').on('click', function () {
+            var showPage = $(this).text().toLowerCase() + '.html';
             $('iframe').prop('src', showPage);
             //alert(event.target.innerHTML);
         })
